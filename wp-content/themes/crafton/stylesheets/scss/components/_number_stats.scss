@@ -1,0 +1,22 @@
+.number-stats {
+	margin: 50px 30px;
+	font-size: 120px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: -2px;
+	
+	@include flex-display(flex);
+	@include flex-direction(row);
+	
+	&>div {
+		@include flex(1);
+		display: inline-block;
+		padding: 10px;
+		
+		&>span {
+			display: block;
+			font-size: 12px;
+			letter-spacing: 2px;
+		}
+	}
+}

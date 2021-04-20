@@ -1,0 +1,25 @@
+article {
+	blockquote {
+		&.pin-left {
+	    	margin-left: -60px;
+		}
+
+		&.pin-right {
+	    	margin-right: -60px;
+		}
+	}
+}
+
+html[dir="rtl"] {
+	article {
+		blockquote {
+			&.pin-left {
+	    		margin-left: -60px;
+			}
+
+			&.pin-right {
+	    		margin-right: -60px;
+			}
+		}
+	}
+}

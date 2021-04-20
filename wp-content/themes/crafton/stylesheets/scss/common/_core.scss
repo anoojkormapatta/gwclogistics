@@ -1,0 +1,163 @@
+* {
+	box-sizing: border-box;
+	outline: none;
+	-ms-content-zooming: none;
+	-ms-scroll-chaining: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+::-moz-selection {
+	color: $color1;
+	background: $color10;
+}
+
+::selection {
+	color: $color1;
+	background: $color10;
+}
+
+html, body {
+	max-width: 100%;
+	background: $color9;
+	font-family: 'Proxima Nova', Helvetica, Arial;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	color: $color7;
+	line-height: 1;
+	letter-spacing: normal;
+	-webkit-text-size-adjust: 100%;
+}
+
+html {
+	background-color: $color9;
+}
+
+body {
+	position: relative;
+	width: 1300px;
+	min-width: 350px;
+	margin: 0px auto;
+
+	&.youtube {
+		overflow: hidden;
+	}
+}
+
+img {
+	border: none;
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+}
+
+a {
+	font-family: 'Proxima Nova', Helvetica, Arial;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	color: $color7;
+	line-height: 1;
+	letter-spacing: normal;
+	text-decoration: none;
+	cursor: pointer;
+	@include transition();
+}
+
+p a{
+	font-size: inherit;
+	color: $color3;
+}
+
+input, textarea, select {
+	font-family: 'Proxima Nova', Helvetica, Arial;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	color: $color2;
+	line-height: 1;
+	letter-spacing: normal;
+	border-radius: 0;
+}
+
+button, input[type="submit"] {
+	cursor: pointer;
+}
+
+figure {
+	img {
+		width: 100%;
+	}
+}
+
+figcaption, .figcaption {
+	color: $color8;
+	font-size: 12px;
+	margin-top: 30px;
+}
+
+.hidden {
+	display: none;
+}
+
+.hidden-text {
+	text-indent: -3000px;
+    line-height: 3000px;
+    overflow: hidden;
+}
+
+.text-white {
+	color: $color1 !important;
+}
+
+.text-black {
+	color: $color2 !important;
+}
+
+.text-center {
+	text-align: center !important;
+}
+
+.text-right {
+	text-align: right !important;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+.panel-wrapper {
+	margin: 0 30px;
+}
+
+.visible-block {
+	display: block !important;
+}
+
+.push-right {
+	float: right;
+}
+
+.mobile {
+	.hamburger span {
+		display: inline-block;
+	}
+
+	.menu a {
+		&:hover, &.active {
+			&+.submenu {
+				display: none;
+			}
+		}
+	}
+
+	.menu a+.submenu.hover {
+		display: block;
+	}
+}

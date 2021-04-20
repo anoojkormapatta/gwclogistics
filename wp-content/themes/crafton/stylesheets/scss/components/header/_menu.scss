@@ -1,0 +1,198 @@
+nav {
+	display: inline-block;
+	line-height: 32px;
+	margin-top: 25px;
+	margin-left: 0;
+	margin-bottom: -1px;
+	text-transform: uppercase;
+	width: calc(100% - 230px);
+	vertical-align: middle;
+
+	&.below {
+		display: inline-block;
+	    position: absolute;
+	    top: 100%;
+	    left: -30px;
+	    right: -30px;
+	    width: auto;
+	    margin-top: 0 !important;
+	    margin-left: 0;
+	    background: $color1;
+	    text-align: center;
+	    z-index: 15001;
+	    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.05);
+
+	    a {
+	    	color: $color2;
+	    }
+	}
+
+	&.flex {
+		@include flex-display(inline-flex);
+		@include flex-direction(row);
+
+		&.below {
+			@include flex-display(inline-flex !important);
+		}
+
+		&>a {
+			display: inline-block;
+			@include flex(1);
+		}
+
+		a {
+			padding: 0 5px;
+		}
+	}
+
+	a {
+		display: inline-block;
+		margin: auto;
+		padding: 25px 10px;
+		color: $color1;
+		line-height: inherit;
+		text-align: center;
+		vertical-align: middle;
+		border-bottom: 3px solid transparent;
+	}
+
+	.expanded {
+		vertical-align: middle;
+
+		 .icon {
+			display: none;
+			margin-left: 20px;
+			vertical-align: text-top;
+
+			@include rotate(180);
+
+			&.s-up {
+				@include rotate(360);
+			}
+		}
+	}
+	
+	.indent {
+		position: relative;
+				
+		&:before {
+			content: '\00a0\02022\00a0';
+			line-height: 1em;
+			color: $color3;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	&.menu {
+		@include transition(0.3s);
+	}
+
+	&.menu a {
+		padding: 25px 20px;
+
+		&:hover, &.active {
+			border-bottom: 3px solid $color3;
+		}
+
+		&:hover {
+			&+.submenu {
+				display: block;
+			}
+		}
+	}
+
+	&.hamburger-wrapper {
+		display: none;
+		vertical-align: middle;
+		font-size: 0;
+		@include transition(0.3s);
+
+		.icon-menu {
+			margin-top: -4px;
+		}
+
+		.icon-menu, span {
+			font-size: 14px;
+			vertical-align: middle;
+		}
+
+		span {
+			display: none;
+			margin-left: 10px;
+		}
+	}
+
+	.submenu {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		font-size: 12px;
+		background: $color1;;
+		padding: 40px 0;
+		margin: 0 -30px;
+		border-top: 1px solid $color26;
+		text-align: right;
+		line-height: 1.25;
+		color: $color8;
+		box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.05);
+
+		&:hover, &.hover {
+			display: block;
+		}
+
+		&>div {
+			display: inline-block;
+			width: 280px;
+			padding: 0 30px;
+			border-left: 1px solid $color21;
+			text-align: left;
+			vertical-align: top;
+
+			&.picture {
+				border: 0 !important;
+				padding-left: 0;
+				width: 250px;
+
+				a.link {
+					border-bottom: 0;
+					color: $color2;
+				}
+
+				div {
+    				height: 100px;
+    				background-position: 50% 50%;
+    				background-repeat: no-repeat;
+    				background-size: cover;
+    				margin-bottom: 5px;
+				}
+			}
+
+			&:not(.picture) {
+				a {
+					color: $color4;
+					font-size: 16px;
+					padding: 0 !important;
+					display: block;
+					text-transform: none;
+					text-align: left;
+
+					&:first-child {
+						margin-top: 15px;
+					}
+
+					&:hover, &:focus {
+						border-color: transparent;
+					}
+					
+					&.indent {
+						padding-left: 18px !important;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,119 @@
+<?php
+/*
+Template Name: Contact Page
+*/
+
+get_header('color');
+?>
+
+<section class="head-info">
+	<ul class="breadcrumbs">
+		<li><a href="<?= home_url() ?>"><?php _e('Home', 'gwc') ?></a></li>
+		<li><?php _e('Contact', 'gwc') ?></li>
+		<li class="active"><?php the_title() ?></li>
+	</ul>
+	<h1><?php the_title() ?></h1>
+</section>
+
+<section class="contact">
+<?php
+	$args = array(
+			'post_type' => 'address',
+			'paged' => 1,
+			'posts_per_page' => -1,
+			'orderby' => array('meta_value' => 'DESC', 'title' => 'ASC'),
+			'meta_key' => 'is_headquarter'
+	);
+	$myquery = new WP_Query($args);
+	$selected = null;
+	$country_id = isset($_REQUEST['country']) ? intval($_REQUEST['country']) : -1;
+
+	if(!$myquery->have_posts()) :
+		$args = array(
+				'post_type' => 'address',
+				'paged' => 1,
+				'lang' => 'en',
+				'posts_per_page' => -1,
+				'orderby' => array('meta_value' => 'DESC', 'title' => 'ASC'),
+				'meta_key' => 'is_headquarter'
+		);
+		$myquery = new WP_Query($args);
+	endif;
+	
+	if($myquery->have_posts()) :
+	?>
+		<div>
+			<form>
+				<label><?php _e('Location', 'gwc') ?></label>
+				<div class="country-select ddlist">
+					<input type="hidden" name="country" value="">
+					<button class="button white btn-icon">
+						<span><?php _e('Select', 'gwc') ?></span>
+						<svg class="icon icon-arrow"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow"></use></svg>
+					</button>
+					<ul>
+						<?php
+						while($myquery->have_posts()) : $myquery->the_post();
+							if($post->ID === $country_id) $selected = $post;
+							?>
+							<li data-value="<?= $post->ID ?>"><?php the_title() ?></li>
+							<?php
+						endwhile;
+						?>
+					</ul>
+				</div>
+			</form>	
+			
+			<?php
+				if(empty($selected)) :
+					$myquery->rewind_posts();
+					$myquery->the_post();
+					$selected = $post;
+				endif;
+				
+				$post = $selected;
+				$myquery->setup_postdata($post);
+		    ?>
+		    <div class="details">
+		    	<?php if(get_field('is_headquarter')) : ?>
+				<h3><?php _e('Headquarter', 'gwc') ?></h3>
+				<?php elseif($category = get_field('entity_category')) : ?>
+				<h3><?= $category ?></h3>
+				<?php endif; ?>
+				<div class="title"><?php the_field('entity_name') ?></div>
+				<?php the_field('details') ?>
+				
+				<?php if($mailto = get_field('mailto')): ?>
+				<div class="hint">
+					<?php _e('E-mail', 'gwc') ?>
+					<a class="button white btn-icon" href="mailto:<?= $mailto ?>"><?php _e('Message us', 'gwc') ?><svg class="icon icon-arrow"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow"></use></svg></a>
+				</div>
+				<?php endif; ?>
+			</div>
+		</div>
+		<div>
+			<div class="map-header">
+				<div class="title"><?php _e('GWC', 'gwc') ?></div><svg class="icon icon-map"><use xlink:href="#icon-map"></use></svg><span><?php _e('on map', 'gwc') ?></span>
+				<a class="button link jsViewLarger"><?php _e('View larger', 'gwc') ?></a>
+			</div>
+		
+			<?php 
+				$coords = get_field('map_location');
+				if(!isset($coords['lat']) || !isset($coords['lng'])) :
+					$coords = array('lat' => 25.2893291, 'lng' => 51.4594189);
+				endif;
+			?>
+			<div id="map" class="jsMap" data-lat="<?= $coords['lat'] ?>" data-lng="<?= $coords['lng'] ?>"></div>
+		</div>
+	<?php
+	else :
+	?>
+		<div><div class="map-header"><div class="title"><?php _e('Not found any addresses', 'gwc') ?></div></div></div>
+	<?php
+	endif;
+	
+?>
+</section>
+	
+<?php
+get_footer();

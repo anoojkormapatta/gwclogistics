@@ -1,0 +1,172 @@
+.tab-panel {
+	&.accordion {
+		&>.tabs {
+			display: block;
+			background: transparent;
+			border-bottom: 0 !important;
+			border-top: 0 !important;
+
+			&>[data-rel] {
+				display: block;
+				margin-left: 0 !important;
+				margin-right: 0 !important;
+
+				&:not(.active):after {
+					content: ' \02630';
+				}
+			}
+
+			&>:not([data-rel]) {
+				color: #fff;
+				padding-bottom: 40px;
+			}
+
+			&>:not([data-rel]):not(.active) {
+				display: none;
+			}
+		}
+	}
+
+	.tabs {
+		color: $color22;
+		background: $color20;
+		font-size: 10px;
+		@include flex-display(flex);
+		@include flex-direction(row);
+
+		&.tabs--reverse{
+			flex-direction: row-reverse;	
+		}
+
+		&.scrollable {
+			position: relative;
+			display: block;
+			overflow: hidden;
+			white-space: nowrap;
+			font-size: 0;
+
+			&>.prevBtn, &>.nextBtn {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				width: 50px;
+				margin: 0;
+				background-color: $color20;
+				color: $color1;
+				cursor: pointer;
+				font-size: 20px;
+				line-height: 10px;
+				padding: 30px 0;
+
+				&[disabled] {
+					cursor: default;
+					opacity: 0;
+				}
+			}
+
+			&>.prevBtn {
+				left: 0;
+			}
+
+			&>.nextBtn {
+				right: 0;
+			}
+
+			div[data-rel] {
+				width: auto;
+				min-width: 120px;
+				font-size: 10px;
+			}
+		}
+
+		&.gray-border {
+			border-top: 1px solid rgba(246,247,248,0.102);
+			border-bottom: 1px solid rgba(246,247,248,0.102);
+
+			div {
+				margin-bottom: -1px;
+			}
+		}
+
+		&.gray-bottom-border {
+			border-bottom: 1px solid rgba(246,247,248,0.102);
+
+			div {
+				margin-bottom: -1px;
+			}
+		}
+
+		div[data-rel] {
+			display: inline-block;
+			@include flex(1);
+			padding: 30px;
+			border-right: 1px solid $color4;
+			cursor: pointer;
+			@include transition();
+
+			&:last-child {
+				border-right: 0;
+			}
+
+			&:not(.pinned-tab) {
+				&.active, &:hover {
+					background: $color17;
+					color: $color1;
+				}
+
+				&:hover {
+					background: $color17 !important;
+				}
+			}
+		}
+
+		.pinned-tab {
+			padding: 30px 30px 0;
+		}
+	}
+
+	.tabs-content {
+
+		.tabs {
+			background: transparent;
+
+			&>div {
+				text-align: center;
+				border-left: 0;
+				border-right: 0;
+				background: transparent;
+
+				&.active {
+					border-bottom: 1px solid $color3;
+					background: transparent;
+				}
+			}
+		}
+
+		&>div:not(.active) {
+			display: none;
+		}
+	}
+
+	.content {
+		padding-top: 10px;
+	}
+
+	.sheer-content {
+		padding: 40px 0;
+	}
+
+	.calendar-signature {
+		font-size: 120px;
+		font-weight: 300;
+		vertical-align: middle;
+		letter-spacing: -5px;
+
+		.icon-calendar {
+			fill: $color17;
+			font-size: 0.35em;
+			margin-right: 10px;
+			vertical-align: middle;
+		}
+	}
+}

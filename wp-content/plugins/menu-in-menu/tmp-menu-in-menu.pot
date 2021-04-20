@@ -1,0 +1,43 @@
+# Copyright (C) 2016 Menu In Menu
+# This file is distributed under the same license as the Menu In Menu package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Menu In Menu 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/menu-in-menu\n"
+"POT-Creation-Date: 2016-04-02 09:20:27+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#. translators: 1: anchor starttag, 2: anchor endtag
+#: menu-in-menu.php:107
+msgid "Please %1$sread the Changelog%2$s before updating!"
+msgstr ""
+
+#: menu-in-menu.php:256
+msgid ""
+"DEBUG: Menu-In-Menu Plugin has prevented recursive menu inclusion (%1$s)"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Menu In Menu"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://wordpress.org/plugins/menu-in-menu/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Allow a Custom Menu to include other Custom Menus"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Roger Barrett"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.wizzud.com/"
+msgstr ""

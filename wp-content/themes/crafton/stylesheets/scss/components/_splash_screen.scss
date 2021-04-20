@@ -1,0 +1,134 @@
+$c-white: #fff;
+$c-dark: #363636;
+$c-color: #999;
+
+.splash {
+	position: fixed;
+	z-index: 16000;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .8);
+	display: none;
+	animation-name: fadeIn;
+	animation-duration: 1s;
+  	animation-fill-mode: both;
+
+	&.active {
+		display: block;
+	}
+
+	&__box {
+		width: 100%;
+		height: 100vh;
+		display: none;
+		align-items: center;
+		justify-content: center;
+
+		&.active {
+			display: flex;
+		}
+
+		&#{&}--img {
+			width: 100%;
+			height: 100%;
+		}
+
+		&#{&}--mobile {
+
+			@include medium {
+				display: none;
+			}
+		}
+
+		&#{&}--tablet {
+
+			@include medium {
+				display: block;
+			}
+
+			@include large {
+				display: none;
+			}
+		}
+
+		&#{&}--desktop {
+
+			@include large {
+				display: block;
+			}
+		}
+	}
+
+	&__close {
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		cursor: pointer;
+
+		svg {
+			width: 30px;
+			height: 30px;
+			fill: $c-white;
+		}
+	}
+
+	&__bcg {
+		width: 100vw;
+		height: 100vh;
+		background-size: 100% 100%;
+	}
+
+	&__content {
+		background: $c-dark;
+		padding: 10px;
+		margin: 20px;
+		max-width: 90vw;
+		max-height: 90vh;
+		overflow: hidden;
+
+
+		position: relative;
+		width: 870px;
+
+
+		img {
+			margin-bottom: 20px;
+		}
+
+		p {
+			margin-top: 10px;
+		}
+
+		a {
+			color: $c-color;
+		}
+	}
+
+	&__contentImg {
+		position: relative;
+		padding-bottom: 56.201%;
+		padding-top: 0;
+		height: 0;
+
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__dsc {
+		overflow: auto;
+		max-height: 80vh;
+
+		img {
+			width: auto;
+		}
+	}
+}

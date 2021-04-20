@@ -1,0 +1,686 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-07 13:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: single-product.php:10 single-stories.php:9 single-award.php:7 search.php:7
+#: single-news.php:14 single.php:8 templates/downloads.php:11
+#: templates/at_a_glance_page.php:11 templates/archive_page.php:11
+#: templates/stories_page.php:12 templates/investor_relations_page.php:11
+#: templates/news_page.php:25 templates/custom_team_page.php:11
+#: templates/advanced_content_page.php:11 templates/infrastructure_page.php:11
+#: templates/contact_page.php:11 templates/track_your_business_page.php:11
+#: templates/w&t_infrastructure_page.php:12 templates/team_page.php:11
+#: templates/solutions_page.php:11
+msgid "Home"
+msgstr ""
+
+#: single-product.php:11
+msgid "Solutions"
+msgstr ""
+
+#: single-stories.php:10 functions.php:459 templates/stories_page.php:13
+msgid "Stories"
+msgstr ""
+
+#: single-stories.php:11
+msgid "Global trade story"
+msgstr ""
+
+#: subpage-investor-corner.php:15 templates/contact_page.php:89
+msgid "Message us"
+msgstr ""
+
+#: subpage-investor-corner.php:19 templates/subpage-investor-corner.php:21
+msgid "Fact Sheet"
+msgstr ""
+
+#: subpage-investor-corner.php:21
+msgid "Factsheet Download"
+msgstr ""
+
+#: subpage-investor-corner.php:29 templates/subpage-investor-corner.php:17
+msgid "Share Price Live"
+msgstr ""
+
+#: subpage-investor-corner.php:51 templates/subpage-investor-corner.php:30
+msgid "Smart Chart"
+msgstr ""
+
+#: subpage-investor-corner.php:70 templates/subpage-investor-corner.php:49
+msgid "Quick Analyser"
+msgstr ""
+
+#: header-color.php:21 header.php:21 header-color-transparent.php:21
+msgid "Menu"
+msgstr ""
+
+#: header-color.php:38 header.php:53 header-color-transparent.php:38
+msgid "Search..."
+msgstr ""
+
+#: single-award.php:109 subpage-products.php:116 subpage-products.php:274
+#: subpage-products.php:344 subpage-advanced-content.php:76
+#: subpage-stories.php:91 subpage-news.php:103
+msgid "Author"
+msgstr ""
+
+#: functions.php:58
+msgid "Stick this post"
+msgstr ""
+
+#: functions.php:360
+msgid "month"
+msgstr ""
+
+#: functions.php:363
+msgid "months"
+msgstr ""
+
+#: functions.php:377
+msgid "day"
+msgstr ""
+
+#: functions.php:380
+msgid "days"
+msgstr ""
+
+#: functions.php:398
+msgid "now"
+msgstr ""
+
+#: functions.php:413 single-news.php:15 templates/home_page.php:50
+#: templates/news_page.php:26
+msgid "News"
+msgstr ""
+
+#: functions.php:418 functions.php:464 functions.php:509 functions.php:555
+#: functions.php:600 functions.php:645 functions.php:690
+msgid "Parent item:"
+msgstr ""
+
+#: functions.php:419 functions.php:465 functions.php:510 functions.php:556
+#: functions.php:601 functions.php:646 functions.php:691
+msgid "All items"
+msgstr ""
+
+#: functions.php:420
+msgid "Show news"
+msgstr ""
+
+#: functions.php:421 functions.php:422
+msgid "Add a news"
+msgstr ""
+
+#: functions.php:423 functions.php:469 functions.php:514 functions.php:560
+#: functions.php:605 functions.php:650 functions.php:695
+msgid "Edit"
+msgstr ""
+
+#: functions.php:424 functions.php:470 functions.php:515 functions.php:561
+#: functions.php:606 functions.php:651 functions.php:696
+msgid "Update"
+msgstr ""
+
+#: functions.php:425 functions.php:471 functions.php:516 functions.php:562
+#: functions.php:607 functions.php:652 functions.php:697
+#: templates/careers_page.php:70
+msgid "Search"
+msgstr ""
+
+#: functions.php:426 functions.php:472 functions.php:517 functions.php:563
+#: functions.php:608 functions.php:653 functions.php:698
+msgid "Not found"
+msgstr ""
+
+#: functions.php:427 functions.php:473 functions.php:518 functions.php:564
+#: functions.php:609 functions.php:654 functions.php:699
+msgid "Not found in trash"
+msgstr ""
+
+#: functions.php:466
+msgid "Show stories"
+msgstr ""
+
+#: functions.php:467 functions.php:468
+msgid "Add a story"
+msgstr ""
+
+#: functions.php:504
+msgid "Job offers"
+msgstr ""
+
+#: functions.php:511
+msgid "Show offers"
+msgstr ""
+
+#: functions.php:512 functions.php:513
+msgid "Add a offer"
+msgstr ""
+
+#: functions.php:550 templates/at_a_glance_page.php:38
+msgid "Awards"
+msgstr ""
+
+#: functions.php:557
+msgid "Show award"
+msgstr ""
+
+#: functions.php:558 functions.php:559
+msgid "Add award"
+msgstr ""
+
+#: functions.php:595 templates/at_a_glance_page.php:71
+msgid "Certificates"
+msgstr ""
+
+#: functions.php:602
+msgid "Show certificate"
+msgstr ""
+
+#: functions.php:603 functions.php:604
+msgid "Add certificate"
+msgstr ""
+
+#: functions.php:640
+msgid "Products"
+msgstr ""
+
+#: functions.php:647
+msgid "Show product"
+msgstr ""
+
+#: functions.php:648 functions.php:649
+msgid "Add product"
+msgstr ""
+
+#: functions.php:685
+msgid "Addresses"
+msgstr ""
+
+#: functions.php:692
+msgid "Show address"
+msgstr ""
+
+#: functions.php:693 functions.php:694
+msgid "Add address"
+msgstr ""
+
+#: subpage-products.php:137 subpage-advanced-content.php:97
+#: subpage-stories.php:112
+msgid "Slide"
+msgstr ""
+
+#: subpage-products.php:414
+msgid "Download"
+msgstr ""
+
+#: subpage-products.php:418 subpage-offers.php:23
+msgid "Apply"
+msgstr ""
+
+#: subpage-annual-reports.php:11 subpage-investor-relations.php:155
+#: subpage-investor-relations.php:359 subpage-investor-relations.php:448
+#: templates/subpage-investor-relations.php:154
+#: templates/subpage-investor-relations.php:358
+#: templates/subpage-investor-relations.php:445
+msgid "Report"
+msgstr ""
+
+#: subpage-annual-reports.php:12 subpage-investor-relations.php:156
+#: subpage-investor-relations.php:177 subpage-investor-relations.php:252
+#: subpage-investor-relations.php:360 subpage-investor-relations.php:449
+#: templates/subpage-investor-relations.php:155
+#: templates/subpage-investor-relations.php:176
+#: templates/subpage-investor-relations.php:251
+#: templates/subpage-investor-relations.php:359
+#: templates/subpage-investor-relations.php:446
+msgid "Pdf"
+msgstr ""
+
+#: subpage-annual-reports.php:12 subpage-investor-relations.php:156
+#: subpage-investor-relations.php:360 subpage-investor-relations.php:422
+#: subpage-investor-relations.php:449 subpage-stock-observation.php:13
+#: templates/subpage-investor-relations.php:155
+#: templates/subpage-investor-relations.php:359
+#: templates/subpage-investor-relations.php:421
+#: templates/subpage-investor-relations.php:446
+msgid "Read"
+msgstr ""
+
+#: search.php:8
+msgid "Search result for"
+msgstr ""
+
+#: search.php:48 templates/archive_page.php:55 templates/stories_page.php:55
+#: templates/news_page.php:50
+msgid "Previous page"
+msgstr ""
+
+#: search.php:52 templates/archive_page.php:59 templates/stories_page.php:59
+#: templates/news_page.php:54
+msgid "Next page"
+msgstr ""
+
+#: search.php:65 templates/archive_page.php:72
+msgid "Not found any posts"
+msgstr ""
+
+#: subpage-stories.php:170
+msgid "Check also"
+msgstr ""
+
+#: subpage-stories.php:175
+msgid "Story"
+msgstr ""
+
+#: subpage-offers.php:25
+msgid "Responsibilities"
+msgstr ""
+
+#: subpage-investor-relations.php:4 templates/subpage-investor-relations.php:4
+msgid "Charts"
+msgstr ""
+
+#: subpage-investor-relations.php:6 subpage-investor-relations.php:143
+#: templates/subpage-investor-relations.php:6
+#: templates/subpage-investor-relations.php:142
+msgid "Board charter"
+msgstr ""
+
+#: subpage-investor-relations.php:9 subpage-investor-relations.php:166
+#: templates/subpage-investor-relations.php:9
+#: templates/subpage-investor-relations.php:165
+msgid "Constitution"
+msgstr ""
+
+#: subpage-investor-relations.php:12
+#: templates/subpage-investor-relations.php:12
+msgid "Corpo. governance"
+msgstr ""
+
+#: subpage-investor-relations.php:15 subpage-investor-relations.php:380
+#: templates/subpage-investor-relations.php:15
+#: templates/subpage-investor-relations.php:379
+msgid "Analyst coverage"
+msgstr ""
+
+#: subpage-investor-relations.php:18 subpage-investor-relations.php:436
+#: templates/subpage-investor-relations.php:18
+#: templates/subpage-investor-relations.php:433
+msgid "Conference call"
+msgstr ""
+
+#: subpage-investor-relations.php:30 templates/home_page.php:252
+#: templates/subpage-investor-relations.php:29
+msgid "Key financial highlights"
+msgstr ""
+
+#: subpage-investor-relations.php:38
+#: templates/subpage-investor-relations.php:37
+msgid "This month"
+msgstr ""
+
+#: subpage-investor-relations.php:90
+#: templates/subpage-investor-relations.php:89
+msgid "Chart"
+msgstr ""
+
+#: subpage-investor-relations.php:91
+#: templates/subpage-investor-relations.php:90
+msgid "Y"
+msgstr ""
+
+#: subpage-investor-relations.php:118 templates/home_page.php:253
+#: templates/subpage-investor-relations.php:117
+msgid "Financial reports"
+msgstr ""
+
+#: subpage-investor-relations.php:126 templates/home_page.php:255
+#: templates/subpage-investor-relations.php:125
+msgid "Annual reports"
+msgstr ""
+
+#: subpage-investor-relations.php:134 templates/home_page.php:258
+#: templates/subpage-investor-relations.php:133
+msgid "Announcements"
+msgstr ""
+
+#: subpage-investor-relations.php:182 subpage-investor-relations.php:260
+#: templates/subpage-investor-relations.php:181
+#: templates/subpage-investor-relations.php:259
+msgid "Download all"
+msgstr ""
+
+#: subpage-investor-relations.php:202
+#: templates/subpage-investor-relations.php:201
+msgid "Corporation governance"
+msgstr ""
+
+#: subpage-investor-relations.php:329
+#: templates/subpage-investor-relations.php:328
+msgid "Reports"
+msgstr ""
+
+#: subpage-investor-relations.php:330
+#: templates/subpage-investor-relations.php:329
+msgid "Corporate governance reports"
+msgstr ""
+
+#: subpage-investor-relations.php:396
+#: templates/subpage-investor-relations.php:395
+msgid "Analyst"
+msgstr ""
+
+#: subpage-investor-relations.php:400
+#: templates/subpage-investor-relations.php:399
+msgid "Name"
+msgstr ""
+
+#: subpage-investor-relations.php:406
+#: templates/subpage-investor-relations.php:405
+msgid "Company"
+msgstr ""
+
+#: subpage-investor-relations.php:412
+#: templates/subpage-investor-relations.php:411 templates/contact_page.php:12
+msgid "Contact"
+msgstr ""
+
+#: footer.php:17
+msgid "GWC headquarter"
+msgstr ""
+
+#: footer.php:21
+msgid "Show on map"
+msgstr ""
+
+#: footer.php:30
+msgid "©{{Y}} GWC. All Rights Reserved"
+msgstr ""
+
+#: footer.php:36
+msgid "Social media"
+msgstr ""
+
+#: footer.php:39
+msgid "Top"
+msgstr ""
+
+#: footer.php:71
+msgid "Your browser is not supported."
+msgstr ""
+
+#: footer.php:72
+msgid "Please use a newer version of IE or Google Chrome, Mozilla Firefox."
+msgstr ""
+
+#: subpage-picture-story.php:3
+msgid "Thanks for"
+msgstr ""
+
+#: subpage-history.php:15
+msgid "Filter by year"
+msgstr ""
+
+#: subpage-history.php:24
+msgid "Latest"
+msgstr ""
+
+#: subpage-history.php:52 templates/home_page.php:85
+msgid "Blog"
+msgstr ""
+
+#: archive-news.php:8
+msgid "News Archive"
+msgstr ""
+
+#: archive-news.php:31
+msgid "Newer news"
+msgstr ""
+
+#: archive-news.php:32
+msgid "Older news"
+msgstr ""
+
+#: subpage-products-gallery.php:12
+msgid "Our Solutions"
+msgstr ""
+
+#: subpage-stock-observation.php:11
+msgid "PDF"
+msgstr ""
+
+#: subpage-stock-observation.php:21 subpage-stock-observation.php:33
+msgid "More info"
+msgstr ""
+
+#: subpage-financial-report-quarter.php:2
+msgid "Q"
+msgstr ""
+
+#: subpage-financial-report-quarter.php:8
+msgid "pdf"
+msgstr ""
+
+#. Name of the template
+msgid "Downloads"
+msgstr ""
+
+#. Name of the template
+msgid "At A Glance Page"
+msgstr ""
+
+#: templates/subpage-investor-corner.php:2
+msgid "Email Us"
+msgstr ""
+
+#: templates/subpage-investor-corner.php:22
+msgid "PDF Download"
+msgstr ""
+
+#. Name of the template
+msgid "Home Page"
+msgstr ""
+
+#: templates/home_page.php:39
+msgid "Check "
+msgstr ""
+
+#: templates/home_page.php:40
+msgid "COVID 19 – Information and Resources"
+msgstr ""
+
+#: templates/home_page.php:41
+msgid "Click here"
+msgstr ""
+
+#: templates/home_page.php:51
+msgid "Archive"
+msgstr ""
+
+#: templates/home_page.php:73
+msgid "Business articles"
+msgstr ""
+
+#: templates/home_page.php:141 templates/home_page.php:207
+#: templates/home_page.php:212 templates/home_page.php:301
+#: templates/careers_page.php:144
+msgid "Discover"
+msgstr ""
+
+#: templates/home_page.php:186 templates/home_page.php:200
+msgid "More"
+msgstr ""
+
+#: templates/home_page.php:205
+msgid "CSR"
+msgstr ""
+
+#: templates/home_page.php:210
+msgid "Industry"
+msgstr ""
+
+#: templates/home_page.php:245
+msgid "Investor Relations"
+msgstr ""
+
+#: templates/home_page.php:299
+msgid "Check our"
+msgstr ""
+
+#: templates/home_page.php:300
+msgid "GWC Career area"
+msgstr ""
+
+#. Name of the template
+msgid "Archive Page"
+msgstr ""
+
+#. Name of the template
+msgid "Stories Page"
+msgstr ""
+
+#: templates/stories_page.php:68
+msgid "Not found any stories"
+msgstr ""
+
+#. Name of the template
+msgid "Careers Page"
+msgstr ""
+
+#: templates/careers_page.php:69
+msgid "Keyword"
+msgstr ""
+
+#: templates/careers_page.php:143
+msgid "Stories behind our doors."
+msgstr ""
+
+#. Name of the template
+msgid "Investor Relations Page"
+msgstr ""
+
+#: templates/subpage-investor-relations.php:24
+msgid "Investor corner"
+msgstr ""
+
+#. Name of the template
+msgid "News Page"
+msgstr ""
+
+#: templates/news_page.php:63
+msgid "Not found any news"
+msgstr ""
+
+#. Name of the template
+msgid "Custom Team Page"
+msgstr ""
+
+#: templates/custom_team_page.php:12 templates/custom_team_page.php:14
+#: templates/team_page.php:12 templates/team_page.php:14
+msgid "Board"
+msgstr ""
+
+#: templates/custom_team_page.php:63
+msgid "Group CEO's message"
+msgstr ""
+
+#: templates/custom_team_page.php:64 templates/team_page.php:54
+msgid "Read now"
+msgstr ""
+
+#: templates/custom_team_page.php:68 templates/team_page.php:58
+msgid "Biography"
+msgstr ""
+
+#. Name of the template
+msgid "Advanced Content Page"
+msgstr ""
+
+#. Name of the template
+msgid "Infrastructure Page"
+msgstr ""
+
+#. Name of the template
+msgid "Contact Page"
+msgstr ""
+
+#: templates/contact_page.php:47
+msgid "Location"
+msgstr ""
+
+#: templates/contact_page.php:51
+msgid "Select"
+msgstr ""
+
+#: templates/contact_page.php:79
+msgid "Headquarter"
+msgstr ""
+
+#: templates/contact_page.php:88
+msgid "E-mail"
+msgstr ""
+
+#: templates/contact_page.php:96
+msgid "GWC"
+msgstr ""
+
+#: templates/contact_page.php:96
+msgid "on map"
+msgstr ""
+
+#: templates/contact_page.php:97
+msgid "View larger"
+msgstr ""
+
+#: templates/contact_page.php:111
+msgid "Not found any addresses"
+msgstr ""
+
+#. Name of the template
+msgid "Track Your Business Page"
+msgstr ""
+
+#. Name of the template
+msgid "Warehousing/Transfort Infrastructure Page"
+msgstr ""
+
+#. Name of the template
+msgid "Team Page"
+msgstr ""
+
+#: templates/team_page.php:53
+msgid "Chairman's message"
+msgstr ""
+
+#. Name of the template
+msgid "Solutions Page"
+msgstr ""
+
+#: includes/sharedata.php:9
+msgid "Last Trade"
+msgstr ""
+
+#: includes/sharedata.php:18
+msgid "Change"
+msgstr ""
+
+#: includes/sharedata.php:27
+msgid "Volume"
+msgstr ""
+
+#. Author of the theme
+msgid "Anonymous"
+msgstr ""

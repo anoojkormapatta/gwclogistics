@@ -1,0 +1,261 @@
+.bx-wrapper {
+	direction: ltr;
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	*zoom: 1;
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+
+	-moz-box-shadow: 0 0 5px $color24;
+	-webkit-box-shadow: 0 0 5px $color24;
+	box-shadow: 0 0 5px $color24;
+	border: 0;
+	background: $color1;
+
+	img {
+		width: 100%;
+		max-width: 100%;
+		display: block;
+	}
+
+	svg {
+		position: absolute;
+		top: 150px;
+		right: 45px;
+		margin: auto;
+		fill: $color1;
+		cursor: pointer;
+		width: 10%;
+		height: 10%;
+		z-index: 12;
+		opacity: 0.5;
+		@include transition();
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	.bxslider {
+		margin: 0;
+		padding: 0;
+	}
+
+	.bx-pager, .bx-controls-auto {
+		position: absolute;
+		bottom: 30px;
+		width: 100%;
+		z-index: 11;
+	}
+
+	.bx-loading {
+		min-height: 50px;
+		background: url('./images/sources/bx_loader.gif') center center no-repeat $color1;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2000;
+	}
+
+	.bx-pager {
+		font-size: .85em;
+		font-family: Arial;
+		font-weight: bold;
+		color: $color22;
+		padding-top: 20px;
+		padding-left: 30px;
+		text-align: left;
+
+		&.bx-default-pager a {
+			position: relative;
+			background: $color1;
+			text-indent: -9999px;
+			display: block;
+			width: 7px;
+			height: 7px;
+			margin: 0 10px;
+			outline: 0;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;
+
+			&:hover, &.active, &:focus {
+				background: $color1;
+			}
+
+			&.active {
+				margin: 0 45px;
+
+				&:before, &:after {
+					content: '';
+					position: absolute;
+					display: block;
+				}
+
+				&:before {
+					top: -12px;
+					left: -12px;
+					width: 28px;
+					height: 28px;
+					border-radius: 15px;
+					border: 2px solid $color1;
+				}
+
+				&:after {
+					top: 3px;
+					left: -29px;
+					width: 65px;
+					height: 1px;
+					background: $color1;
+				}
+			}
+		}
+	}
+
+	.bx-pager-item, .bx-controls-auto .bx-controls-auto-item {
+		display: inline-block;
+		*zoom: 1;
+		*display: inline;
+	}
+
+	.bx-pager-item {
+		font-size: 0;
+		line-height: 0;
+
+		&:first-of-type a {
+			margin-left: 10px;
+
+			&.active:after {
+				left: 3px;
+				width: 32px;
+			}
+		}
+
+		&:last-of-type a {
+			margin-right: 10px;
+
+			&.active:after {
+				left: -29px;
+				width: 32px;
+			}
+		}
+	}
+
+	.bx-prev {
+		left: 10px;
+		background: url('./images/sources/controls.png') no-repeat 0 -32px;
+
+		&:hover, &:focus {
+			background-position: 0 0;
+		}
+	}
+
+	.bx-next {
+		right: 10px;
+		background: url('./images/sources/controls.png') no-repeat -43px -32px;
+
+		&:hover, &:focus {
+			background-position: -43px 0;
+		}
+	}
+
+	.bx-controls-direction a {
+		position: absolute;
+		top: 50%;
+		margin-top: -16px;
+		outline: 0;
+		width: 32px;
+		height: 32px;
+		text-indent: -9999px;
+		z-index: 9999;
+
+		&.disabled {
+			display: none;
+		}
+	}
+
+	.bx-controls-auto {
+		text-align: center;
+
+		.bx-start {
+			display: block;
+			text-indent: -9999px;
+			width: 10px;
+			height: 11px;
+			outline: 0;
+			background: url('./images/sources/controls.png') -86px -11px no-repeat;
+			margin: 0 3px;
+
+			&:hover, &.active, &:focus {
+				background-position: -86px 0;
+			}
+		}
+
+		.bx-stop {
+			display: block;
+			text-indent: -9999px;
+			width: 9px;
+			height: 11px;
+			outline: 0;
+			background: url('./images/sources/controls.png') -86px -44px no-repeat;
+			margin: 0 3px;
+
+			&:hover, &.active, &:focus {
+				background-position: -86px -33px;
+			}
+		}
+	}
+
+	.bx-controls.bx-has-controls-auto.bx-has-pager {
+		.bx-pager {
+			text-align: left;
+			width: 80%;
+		}
+
+		.bx-controls-auto {
+			right: 0;
+			width: 35px;
+		}
+	}
+
+	.bx-caption {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background: $color22;
+		background: rgba(80, 80, 80, 0.75);
+		width: 100%;
+
+		span {
+			color: $color1;
+			display: block;
+			font-size: .85em;
+			padding: 10px;
+		}
+	}
+}
+
+ul.bxslider {
+	list-style: none;
+}
+
+.bx-viewport {
+	/*fix other elements on the page moving (on Chrome)*/
+	-webkit-transform: translatez(0);
+
+	li:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		z-index: 1;
+		@include opacity(0.1);
+		@include gradient(rgb(0,0,0), rgba(0,0,0,0), vertical);
+	}
+}

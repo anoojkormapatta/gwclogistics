@@ -1,0 +1,11 @@
+[14-Jan-2020 15:43:47 UTC] PHP Notice:  Undefined index: _upl in /home/gwcmaster/public_html/wp-content/plugins/acf-better-search/components/default.php on line 5
+[10-Mar-2020 15:55:50 UTC] PHP Notice:  Undefined index: _upl in /home/gwcmaster/public_html/wp-content/plugins/acf-better-search/components/default.php on line 5
+[10-Mar-2020 15:56:07 UTC] PHP Notice:  Undefined index: _upl in /home/gwcmaster/public_html/wp-content/plugins/acf-better-search/components/default.php on line 5
+[10-Mar-2020 15:56:23 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; DbClass has a deprecated constructor in /home/gwcmaster/public_html/wp-content/plugins/acf-better-search/components/5.php on line 1236
+[10-Mar-2020 15:56:24 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; DbClass has a deprecated constructor in /home/gwcmaster/public_html/wp-content/plugins/acf-better-search/components/5.php on line 1236
+[10-Mar-2020 15:56:31 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; DbClass has a deprecated constructor in /home/gwcmaster/public_html/wp-content/plugins/acf-better-search/components/5.php on line 1236
+[10-Mar-2020 15:56:32 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; DbClass has a deprecated constructor in /home/gwcmaster/public_html/wp-content/plugins/acf-better-search/components/5.php on line 1236
+[10-Mar-2020 15:56:42 UTC] PHP Notice:  Undefined index: _upl in /home/gwcmaster/public_html/wp-content/plugins/acf-better-search/components/default.php on line 5
+[19-Mar-2021 13:21:51 UTC] PHP Notice:  Undefined index: _upl in /home/gwcmaster/public_html/wp-content/plugins/acf-better-search/components/default.php on line 5
+[19-Mar-2021 13:21:52 UTC] PHP Notice:  Undefined index: _upl in /home/gwcmaster/public_html/wp-content/plugins/acf-better-search/components/default.php on line 5
+[19-Mar-2021 13:21:53 UTC] PHP Notice:  Undefined index: _upl in /home/gwcmaster/public_html/wp-content/plugins/acf-better-search/components/default.php on line 5

@@ -1,0 +1,178 @@
+@mixin afterAlignMiddle() {
+   &:after {
+      content: '';
+      position: relative;
+      height: 100%;
+      display: inline-block;
+      vertical-align: middle;
+   }
+}
+
+@mixin clearfix() {
+   &:after {
+      content: '';
+      display: block;
+      clear: both;
+   }
+}
+
+@mixin imageResponsive() {
+   display: block;
+   max-width: 100%;
+   max-height: 100%;
+   height: auto;
+}
+
+@mixin placeholder {
+   &::-webkit-input-placeholder { @content }
+   &::-moz-placeholder { @content }
+   &:-ms-input-placeholder { @content }
+   &:-moz-placeholder { @content }
+   &:placeholder { @content }
+}
+
+@mixin transform($transforms) {
+   -moz-transform: $transforms;
+   -o-transform: $transforms;
+   -ms-transform: $transforms;
+   -webkit-transform: $transforms;
+   transform: $transforms;
+}
+
+@mixin rotate($deg) {
+   @include transform(rotate(#{$deg}deg));
+}
+
+@mixin scale($scale) {
+   @include transform(scale($scale));
+}
+ 
+@mixin translate($x, $y) {
+   @include transform(translate($x, $y));
+}
+
+@mixin skew($x, $y) {
+   @include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+@mixin transition($duration: 0.25s, $function: ease-in-out, $element: all, $delay: 0s) {
+   -webkit-transition: $element $duration $function $delay;
+   transition: $element $duration $function $delay;
+}
+
+@mixin flex-display($f) {
+	display: -webkit-#{$f};
+	display: -moz-#{$f};
+	display: -ms-#{$f}box;
+	display: -ms-#{$f};
+	display: $f;
+}
+
+@mixin flex-direction($value: row) {
+	@if $value == row-reverse {
+		-webkit-box-direction: reverse;
+		-webkit-box-orient: horizontal;
+	} @else if $value == column {
+		-webkit-box-direction: normal;
+		-webkit-box-orient: vertical;
+	} @else if $value == column-reverse {
+		-webkit-box-direction: reverse;
+		-webkit-box-orient: vertical;
+	} @else {
+		-webkit-box-direction: normal;
+		-webkit-box-orient: horizontal;
+	}
+	-webkit-flex-direction: $value;
+	-moz-flex-direction: $value;
+	-ms-flex-direction: $value;
+	flex-direction: $value;
+}
+
+@mixin flex-wrap($value: nowrap) {
+	// No Webkit Box fallback.
+	-webkit-flex-wrap: $value;
+	-moz-flex-wrap: $value;
+	@if $value == nowrap {
+		-ms-flex-wrap: none;
+	} @else { 
+		-ms-flex-wrap: $value; 
+	}
+	flex-wrap: $value;
+}
+
+@mixin flex-grow($value: 1) {
+	-webkit-flex-grow: $value;
+	-moz-flex-grow: $value;
+	-ms-flex-grow: $value;
+	-ms-flex-positive: $value;
+	flex-grow: $value;
+}
+
+@mixin flex-shrink($shrink: 1) {
+    -webkit-flex-shrink: $shrink;
+    -webkit-box-flex: $shrink;
+    -moz-flex-shrink: $shrink;
+    -ms-flex-negative: $shrink;
+    flex-shrink: $shrink;
+}
+
+@mixin flex-basis($basis: auto) {
+    -webkit-flex-basis: $basis;
+    -moz-flex-basis: $basis;
+    -ms-flex-preferred-size: $basis;
+    flex-basis: $basis;
+}
+
+@mixin flex($grow: 0, $shrink: 1, $basis: 0%) {
+    @include flex-grow($grow);
+    @include flex-shrink($shrink);
+    @include flex-basis($basis);
+}
+
+@mixin order($int: 0) {
+	-webkit-box-ordinal-group: $int + 1;
+	-webkit-order: $int;
+	-moz-order: $int;
+	-ms-flex-order: $int;
+	order: $int;
+}
+
+@mixin opacity($opacity) {
+	-webkit-opacity: 	$opacity;
+	-moz-opacity: 		$opacity;
+	opacity: 			$opacity;
+}
+
+@mixin gradient($start-color, $end-color, $orientation) {
+ 	background: $start-color;
+ 	@if $orientation == vertical {
+	 	// vertical
+	 	background: -moz-linear-gradient(top,  $start-color 0%, $end-color 100%);
+	 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$start-color), color-stop(100%,$end-color));
+	 	background: -webkit-linear-gradient(top,  $start-color 0%,$end-color 100%);
+	 	background: -o-linear-gradient(top,  $start-color 0%,$end-color 100%);
+	 	background: -ms-linear-gradient(top,  $start-color 0%,$end-color 100%);
+	 	background: linear-gradient(to bottom,  $start-color 0%,$end-color 100%);
+	 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=0 );
+ 	}
+ 	@else if $orientation == horizontal {
+ 	// horizontal
+	 	background: -moz-linear-gradient(left,  $start-color 0%, $end-color 100%);
+	 	background: -webkit-gradient(linear, left top, right top, color-stop(0%,$start-color), color-stop(100%,$end-color));
+	 	background: -webkit-linear-gradient(left,  $start-color 0%,$end-color 100%);
+	 	background: -o-linear-gradient(left,  $start-color 0%,$end-color 100%);
+	 	background: -ms-linear-gradient(left,  $start-color 0%,$end-color 100%);
+	 	background: linear-gradient(to right,  $start-color 0%,$end-color 100%);
+	 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=1 );
+ 	}
+ 	@else {
+ 		// radial
+	 	background: -moz-radial-gradient(center, ellipse cover,  $start-color 0%, $end-color 100%);
+	 	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,$start-color), color-stop(100%,$end-color));
+	 	background: -webkit-radial-gradient(center, ellipse cover,  $start-color 0%,$end-color 100%);
+	 	background: -o-radial-gradient(center, ellipse cover,  $start-color 0%,$end-color 100%);
+	 	background: -ms-radial-gradient(center, ellipse cover,  $start-color 0%,$end-color 100%);
+	 	background: radial-gradient(ellipse at center,  $start-color 0%,$end-color 100%);
+	 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=1 );
+ 	}
+}

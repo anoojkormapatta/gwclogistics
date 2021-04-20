@@ -1,0 +1,27 @@
+%flex-panel {
+	@include clearfix();
+	@include flex-display(flex);
+	@include flex-direction(row);
+	
+	&>div {
+		@include flex(1);
+		display: inline-block;
+		padding: 0 10px;
+		
+		&:first-child {
+			padding-left: 0;
+			
+			p.lead {
+				width: 66%;
+			}
+		}
+		
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+}
+
+%flex-column {
+	@include flex-direction(column);
+}

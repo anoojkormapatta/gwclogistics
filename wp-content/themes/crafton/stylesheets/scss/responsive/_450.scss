@@ -1,0 +1,578 @@
+html[dir='rtl'] {
+	.investor {
+		.content {
+			.y-axis {
+				right: 10px;
+			}
+
+			.rate {
+				padding-left: 40px;
+			}
+		}
+
+		.data {
+			.percentage {
+				span {
+					right: 0;
+					left: 0;
+				}
+
+				i {
+	    			right: 50%;
+	    			margin-right: -55px;
+				}
+			}
+		}
+
+		.financial-reports {
+			.internal-content {
+				.q-stats {
+					padding-right: 40px;
+					padding-left: 0px;
+
+					.icon-chart {
+						right: 10px;
+					}
+
+					span {
+						left: 43px;
+					}
+
+					i {
+						left: 50px;
+					}
+				}
+			}
+		}
+
+		.stock-observation {
+			.internal-content {
+				.content {
+					.column {
+						text-align: right;
+					}
+				}
+			}
+		}
+	}
+
+	.infrastructure .builds-info .column {
+		text-align: right !important;
+	}
+
+	.contact {
+		.details {
+			padding-left: 0;
+
+			.hint {
+				a {
+					margin-right: 20px;
+				}
+			}
+		}
+	}
+
+	.articles {
+		.column {
+			.title {
+				.button {
+					float: left;
+				}
+			}
+
+			.picture-item {
+				padding: 10px 110px 10px 10px;
+
+				&.no-photo {
+					padding-right: 10px;
+				}
+			}
+		}
+	}
+
+	.team {
+		.secondary-data {
+			.details {
+				right: 80px;
+			}
+		}
+
+		.big-panel {
+			&>div:first-child {
+				.message {
+					text-align: right;
+				}
+			}
+		}
+
+		.bio-info{
+
+			&.bio--chairman{
+				margin-top: 170px;
+			}
+		}
+	}
+
+	.slider {
+		p {
+			left: 30px;
+		}
+	}
+
+	.details-dialog {
+		.download {
+			left: 10px;
+		}
+
+		.apply {
+			left: 10px;
+		}
+	}
+}
+
+.slider {
+	p {
+		top: 15px;
+		right: 30px;
+		font-size: 16px;
+		letter-spacing: 0;
+	}
+
+	.caption {
+		.title {
+			font-size: 24px !important;
+		}
+
+		.subtitle {
+			display: none;
+		}
+
+		.title, .subtitle {
+			line-height: 1.05;
+		}
+
+		.title:first-of-type {
+			margin-top: 10px;
+		}
+
+		.button {
+			padding: 8px !important;
+		}
+	}
+
+	&.full-height {
+		.caption {
+			top: 20px;
+			padding-left: 20px;
+			padding-right: 20px;
+
+			.button {
+				margin-top: 15px;
+			}
+		}
+	}
+}
+
+.articles {
+	.column {
+		.title {
+			height: 64px;
+			padding: 20px;
+			font-size: 18px;
+			line-height: 24px;
+
+			.button {
+				float: right;
+				margin-top: -12px;
+			}
+		}
+
+		.items {
+			margin: 30px;
+		}
+
+		.picture-item {
+			min-height: 100px;
+			padding: 10px 10px 10px 110px;
+			font-size: 18px;
+			line-height: 1.05;
+
+			&.no-photo {
+				padding-left: 10px;
+			}
+
+			.photo {
+				width: 100px;
+			}
+
+			.category {
+				font-size: 12px;
+			}
+
+			.subject {
+				margin-top: 5px;
+			}
+		}
+
+		.text-item {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			font-size: 20px;
+    		line-height: 24px;
+		}
+
+		.items {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.infrastructure {
+	&>.content {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.builds-info {
+		@include flex-direction(column !important);
+
+		&>.column {
+			@include flex(1 !important, 0 !important, auto !important);
+		}
+
+		.column {
+			border-right: 0 !important;
+			border-bottom: 1px solid rgba(246, 247, 248, 0.102);
+			padding-bottom: 20px !important;
+			text-align: left !important;
+		}
+
+		.info-row {
+			padding: 0 !important;
+		}
+	}
+}
+
+.contact {
+	.details {
+		text-align: center;
+		padding-right: 0;
+
+		.hint {
+			width: auto;
+			position: static;
+			margin-top: 20px;
+
+			a {
+				margin-left: 20px;
+			}
+		}
+	}
+
+	.map-header {
+		margin: 20px 0;
+	}
+
+	.jsMap {
+		height: 350px;
+	}
+}
+
+.certificates {
+	.huge-label {
+		font-size: 120px;
+	}
+}
+
+.picture-panels {
+	height: 1215px;
+
+	.panel {
+		.title {
+			font-size: 22px;
+			letter-spacing: 0;
+		}
+	}
+
+	.column .footer .category-title {
+		letter-spacing: 0;
+		width: calc(100% - 235px)
+	}
+
+	.panels {
+		.panel {
+			margin: 307px 0 90px;
+		}
+	}
+}
+
+.button {
+	min-width: 140px;
+}
+
+.bx-wrapper {
+
+	.bx-controls-auto, .bx-pager {
+		bottom: 20px;
+	}
+
+	.bx-pager {
+		padding-left: 20px;
+
+		&.bx-default-pager a {
+			margin: 0 10px;
+			width: 4px;
+			height: 4px;
+
+			&.active {
+				margin: 0 15px;
+
+				&:before {
+					top: -7px;
+					left: -7px;
+					width: 14px;
+					height: 14px;
+					border-radius: 9px;
+				}
+
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.investor {
+	.chart-panel {
+		margin: 0;
+	}
+
+	.content {
+		@include flex-direction(column !important);
+
+		&>.column {
+			@include flex(1 !important, 0 !important, auto !important);
+		}
+
+		.content {
+			.column {
+				text-align: center;
+			}
+		}
+
+		.y-axis {
+			left: 10px;
+		}
+
+		.rate {
+			padding-right: 40px;
+			padding-top: 20px;
+
+			i {
+				top: 30px;
+			}
+		}
+	}
+
+	.data {
+		.percentage {
+			span {
+				left: 0;
+				right: 0;
+			}
+
+			div {
+				padding-bottom: 30px;
+			}
+
+			i {
+				bottom: 1px;
+    			left: 50%;
+    			margin-left: -55px;
+    			top: auto;
+			}
+		}
+	}
+
+	.financial-reports {
+		.internal-content {
+			.col-helper .column {
+				margin: 0 0;
+			}
+
+			.q-stats {
+				padding-left: 40px;
+				padding-right: 0px;
+
+				.icon-chart {
+					left: 10px;
+				}
+
+				span {
+					right: 43px;
+				}
+
+				i {
+					right: 50px;
+				}
+			}
+		}
+	}
+
+	.stock-observation {
+		.internal-content {
+			.content {
+				.column {
+					text-align: left;
+				}
+			}
+
+			.col-helper .column {
+				margin: 0;
+			}
+		}
+
+		.pinned-tab {
+			svg {
+				display: none;
+			}
+
+			a {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+		}
+	}
+}
+
+.investor-relations {
+	.investor {
+		.data .general>div:first-child {
+			text-align: center;
+		}
+
+		.month-stats .chart {
+			display: none;
+		}
+	}
+}
+
+.team {
+	.secondary-data {
+		.details {
+			left: 0;
+			position: relative;
+			margin-bottom: 30px;
+		}
+
+		.picture-wrapper {
+			min-height: 0;
+			width: 50px;
+		}
+	}
+
+	.big-panel {
+		&>div:first-child {
+			.details {
+				bottom: 0;
+			}
+
+			.message {
+				position: static;
+				text-align: left;
+			}
+
+			.picture-wrapper {
+				margin-bottom: 75px;
+			}
+		}
+	}
+
+	.picture-wrapper {
+		min-height: 50px;
+		height: auto;
+	}
+
+	.bio-info{
+
+		&.bio--chairman{
+			margin-top: 170px;
+		}
+	}
+}
+
+.careers-block {
+	.offers {
+		.subtitle {
+    		font-size: 16px;
+    	}
+
+    	.title {
+    		font-size: 18px;
+    	}
+    }
+}
+
+.documents {
+	.title {
+		margin-top: -40px;
+		font-size: 20px;
+		line-height: 24px;
+	}
+}
+
+.head-info {
+	h2 {
+		margin: 15px 30px;
+	}
+
+	h1 {
+		font-size: 36px;
+	}
+}
+
+
+article {
+	h3 {
+		margin: 20px 0 20px;
+		font-size: 30px;
+	}
+
+	.gallery {
+		.jspPane>div, .mCSB_container>div, &>div {
+			height: 250px;
+			min-height: 250px;
+			max-height: 250px;
+		}
+	}
+}
+
+.details-dialog {
+	padding-top: 90px;
+
+	.download {
+		top: -30px;
+		right: 10px;
+	}
+
+	.apply {
+		top: 25px;
+		right: 10px;
+	}
+}
+
+.grid-container {
+	.content {
+		svg {
+			height: 180px;
+		}
+
+		a {
+			display: block;
+			font-size: 2em;
+			margin-top: 30px;
+		}
+	}
+}

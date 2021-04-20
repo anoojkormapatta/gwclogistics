@@ -1,0 +1,39 @@
+@media print {
+	header, footer, .history, figure, figcaption, .figcaption, .slider, img, article .certificates, .careers-block .number-stats, .careers-block .picture-panel, .intro {
+		display: none !important;
+	}
+	
+	.careers-block .offer-details {
+		max-height: 1000px !important;
+	}
+	
+	.careers-block .search-panel, .careers-block .offers>div {
+		padding-left: 30px !important;
+		padding-right: 30px !important;
+	}
+	
+	.head-info {
+		padding-top: 30px !important;
+	}
+	
+	.news-block {
+		margin-left: -370px !important;
+	}
+	
+	[style*='background-image'] {
+		background-image: none !important;
+	}
+	
+	.gallery>div {
+		min-height: 150px !important;
+		height: auto !important;
+	}
+	
+	.head-info.news-info+.news-block {
+		margin-top: 30px !important;
+	}
+	
+	.intro+.head-info {
+		position: static !important;
+	}
+}

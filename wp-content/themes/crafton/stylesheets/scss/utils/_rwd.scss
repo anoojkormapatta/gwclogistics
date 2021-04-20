@@ -1,0 +1,57 @@
+$breakpoints: (
+	very-small: (
+		min-width: 320px,
+		max-width: 600px - 1,
+	),
+	small: (
+		min-width: 600px,
+		max-width: 768px - 1,
+	),
+	medium: (
+		min-width: 768px,
+		max-width: 1024px - 1,
+	),
+	large: (
+		min-width: 1024px,
+		max-width: 1300px - 1,
+	),
+	large-max: (
+		min-width: 1200px,
+		max-width: 1300px - 1,
+	),
+	large-over: (
+		min-width: 1350px
+	)
+);
+
+@mixin small {
+	@media screen and (max-width: map-get(map-get($breakpoints, 'small'), 'max-width')) { @content; }
+}
+
+@mixin medium {
+	@media screen and (max-width: map-get(map-get($breakpoints, 'medium'), 'max-width')) { @content; }
+}
+
+@mixin medium-only {
+	@media screen and (max-width: map-get(map-get($breakpoints, 'medium'), 'max-width')) and (max-width: map-get(map-get($breakpoints, 'medium'), 'max-width')) { @content; }
+}
+
+@mixin large {
+	@media screen and (max-width: map-get(map-get($breakpoints, 'large'), 'max-width')) { @content; }
+}
+
+@mixin large-max {
+	@media screen and (max-width: map-get(map-get($breakpoints, 'large-max'), 'max-width')) { @content; }
+}
+
+@mixin large-over {
+	@media screen and (max-width: map-get(map-get($breakpoints, 'large-over'), 'max-width') + 1) { @content; }
+}
+
+@mixin retina {
+	@media  only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) { @content; }
+}
+
+@mixin ladscape {
+	@media only screen and (orientation:landscape){ @content }
+}

@@ -1,0 +1,184 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "Menu In Menu"
+msgstr ""
+
+#. Short description.
+msgid "Place one Custom Menu inside another Custom Menu"
+msgstr ""
+
+#. Screenshot description.
+msgid "Navigation Menus metabox"
+msgstr ""
+
+#. Found in description header.
+msgid "Perpetual Loops"
+msgstr ""
+
+#. Found in description header.
+msgid "Frontend Only"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "This plugin enables a Custom Menu to \"include\" any other Custom Menu, so groups of items that get repeated across multiple menus can be defined just once and then included into any other menu at will."
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"If you have a set of menu items that you repeat across several menus, it can be a bit of a pain when\n"
+"one of that set needs updating and you have to go through all your menus changing each one."
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"This plugin allows you to define the subset of items as a separate menu, and then include that menu\n"
+"into any other menu. If you then need to maintain one of the items in the subset, you only need to update\n"
+"one menu, and the change automatically gets reflected in all the other menus that include that subset!"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "It's as easy to use as adding a Post, Page, Category or Tag to your menu..."
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"With the plugin activated, go to your Menus page in admin.\n"
+"As well as being able to add Posts, Categories, etc, to your menu, you should now see a metabox for\n"
+"<strong>Navigation Menus</strong> which has checkboxes for each of your defined Menus (if you don't see the metabox,\n"
+"check your Screen Options settings at the top of the page).\n"
+"All you need to do is create your submenu (as you would any other menu),\n"
+"open the menu you want to insert the new submenu into,\n"
+"select the submenu from the Navigation Menus metabox,\n"
+"Add it,\n"
+"and position it.\n"
+"Save and you're done!"
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"The inserted Menu <em>replaces</em> the Navigation Menu item in the menu. You can insert multiple instances of the\n"
+"same submenu into one menu, and you can include a submenu into as many other menus as you need."
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"The one thing that the plugin guards against is getting into a never-ending loop : it won't prevent you\n"
+"setting one up (see FAQs as to why), but it <em>will not</em> output any submenu that has itself as an antecedent."
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"For example, you can set up menus such that Menu A includes Menu B, which includes Menu C. Fine, no problem.\n"
+"However, if you were to also add Menu B into Menu C as a Navigation Menu item,\n"
+"then no matter which menu you choose to output, you have a potential loop\n"
+"(... B, includes C, includes B, includes C, ... and so on)."
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"If WP_DEBUG is enabled, the plugin will print a warning wherever it has taken action to prevent a loop condition.\n"
+"This behaviour can be changed by hooking into a filter (see FAQs)."
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"The plugin only performs the menu replacement at the frontend of WordPress (ie. not on Admin pages).\n"
+"This behaviour can be changed by hooking into a filter (see FAQs),\n"
+"but please ensure that you do <strong>not</strong> enable it for the Menus admin page!"
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "Install and activate via 'Plugins &gt; Add New' in your WP Admin."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Initial release"
+msgstr ""
+
+#. Found in faq header.
+msgid "Why can't I see the Navigation Menus metabox on the Menus page?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Why isn't an included menu appearing in the menu I put it in?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Why doesn't the plugin stop me setting up a perpetual loop?"
+msgstr ""
+
+#. Found in faq header.
+msgid "How do I resolve an unintended perpetual loop?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Can I prevent the notification of a perpetual loop, while keeping WP_DEBUG enabled?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Can I get notification of perpetual loops without having to enable WP_DEBUG?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Can I enable the menu replacement for Admin pages?"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "If you have a question or problem that is not covered here, please use the <a href=\"https://wordpress.org/support/plugin/menu-in-menu\">Support forum</a>."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid ""
+"Check your Screen Options (top of the page). Screen Options give you the ability to turn off/on metaboxes,\n"
+"and it's possible that Naviagtion Menus is turned off : just activate the checkbox in Screen Options and\n"
+"the Navigation Menus metabox should appear (assuming the plugin is activated, of course)."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid ""
+"It's possible that the inclusion might have created a perpetual loop, and the plugin won't allow that - it\n"
+"simply refuses to output any menu that is contained within itself (ie. has itself as an antedecent). If you enable\n"
+"WP_DEBUG you will see a message <em>if</em> the plugin has taken action to prevent a perpetual loop.\n"
+"If it's not a perpetual loop situation then it may be that another plugin is getting in the way. And that is\n"
+"a lot harder to resolve!"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid ""
+"Because they have the potential to be used deliberately.\n"
+"Take an example where Menu A includes Menu B, and Menu includes Menu A.\n"
+"If you output Menu A, you'll get Menu A with Menu B included.\n"
+"If you output Menu B, you'll get Menu B with Menu A included.\n"
+"They may be occasions where this is useful."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid ""
+"Enable WP_DEBUG and check the message produced by the plugin. Part of the message gives the names of menus\n"
+"that have included one another, the last one being the one that would have caused the loop. Somewhere\n"
+"preceding it you should see the same menu name. The first name was the menu that was requested to be\n"
+"displayed, and it included the 2nd, which in turn included the 3rd, etc. You can use this to determine\n"
+"how you need to restructure your menus so as to avoid any perpetual loops."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid ""
+"Yes, there's a filter you can hook into. Add the following code (modified to suit) to your theme's\n"
+"functions.php (or wherever you feel is more appropriate)..."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "By default, <code>$notify</code> is <strong>false</strong> <em>unless</em> WP_DEBUG is enabled."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid ""
+"This is the flip side of the previous question,\n"
+"and you simply need to return <strong>true</strong> - instead of false - from a 'mim_notify_recursion' filter (see above)."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "By default, <code>$expand</code> is <strong>true</strong> <em>unless</em> running Admin."
+msgstr ""

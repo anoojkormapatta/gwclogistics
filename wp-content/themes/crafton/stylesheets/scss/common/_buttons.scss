@@ -1,0 +1,172 @@
+.button {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	border: 0;
+	border-radius: 4px;
+	padding: 16px;
+	font-size: 12px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	min-width: 170px;
+	@include transition();
+
+	&.link {
+		min-width: 0;
+		padding: 4px 10px;
+	}
+
+	&.white {
+		color: $color4;
+		background: $color5;
+		border: 1px solid $color6;
+	}
+
+	&.black {
+		color: $color1;
+		background: $color4;
+		border: 1px solid $color4;
+	}
+
+	&:hover {
+		&.white {
+			color: $color1;
+			background: $color4;
+			border-color: $color5;
+		}
+		&.black {
+			color: $color4;
+			background: $color5;
+			border: 1px solid $color6;
+
+			.icon-live-stream {
+				fill: $color4;
+			}
+			&.black--special{
+				color: $color3;
+				background: $color4;
+				border: 1px solid $color4;
+			}
+		}
+	}
+
+	.icon {
+		fill: $color3;
+		font-size: 1.4em;
+		position: absolute;
+		top: 0;
+		right: 16px;
+		bottom: 0;
+		margin: auto;
+	}
+
+	&.btn-icon {
+		text-align: left;
+		padding-right: 48px;
+	}
+
+	.icon-live-stream {
+		position: static;
+		fill: $color1;
+		vertical-align: bottom;
+	}
+}
+
+.rounded {
+	&.inline {
+		display: inline-block;
+	}
+
+    a {
+    	display: inline-block;
+    	cursor: pointer;
+    	border-radius: 50%;
+    	width: 36px;
+    	height: 36px;
+    	line-height: 34px !important;
+    	font-size: 0 !important;
+    	vertical-align: middle;
+    	text-align: center;
+
+		@include transition();
+
+		.icon {
+			line-height: 34px;
+		}
+
+		&.white {
+			color: $color4;
+			background: $color5;
+			border: 1px solid $color6;
+
+			.icon {
+				color: $color4;
+			}
+		}
+		
+		&.trans {
+			color: $color4;
+			background: transparent;
+			border: 0;
+
+			.icon {
+				color: $color2;
+			}
+		}
+
+		&.black {
+			color: $color1;
+			background: $color4;
+			border: 1px solid $color4;
+
+			.icon {
+				color: $color1;
+			}
+		}
+
+		&:hover {
+			&.white {
+				color: $color1;
+				background: $color4;
+				border-color: $color5;
+
+				.icon {
+					color: $color1;
+				}
+			}
+			&.black {
+				color: $color4;
+				background: $color5;
+				border: 1px solid $color6;
+
+				.icon {
+					color: $color4;
+				}
+			}
+			&.trans {
+				color: $color4;
+				background: transparent;
+				border: 0;
+				opacity: 0.7;
+				
+				.icon {
+					color: $color2;
+				}
+			}
+		}
+    }
+
+    &>div {
+    	display: inline-block;
+    }
+
+    .icon {
+    	font-size: 16px;
+    	vertical-align: middle;
+    }
+}
+
+.printing {
+	margin-left: 20px;
+}

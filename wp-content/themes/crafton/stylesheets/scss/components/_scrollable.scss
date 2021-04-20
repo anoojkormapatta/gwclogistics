@@ -1,0 +1,25 @@
+.h-scrollable {
+	overflow-x: auto;
+	overflow-y: hidden;
+	width: auto;
+	height: 560px;
+	position: relative;
+}
+
+.scroll-panel {
+	font-size: 0;
+	display: block;
+	white-space: nowrap;
+		
+	&>div {
+		display: inline-block;
+			
+		&.scroll-table:not(:first-child) {
+			display:none;
+		}
+	}
+}
+
+.mCSB_container {
+	position: absolute;
+}

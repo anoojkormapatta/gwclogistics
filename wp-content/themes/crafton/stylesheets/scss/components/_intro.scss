@@ -1,0 +1,110 @@
+.intro {
+	height: 900px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-color: $color4;
+	
+	&.small-intro {
+		height: 450px;
+	}
+	
+	&+.head-info {
+		position: absolute;
+		top: 111px;
+		left: 0;
+		padding-top: 0;
+		color: $color1;
+		background: transparent;
+	
+		.breadcrumbs {
+			display: none;
+			
+			li {		
+				&.active {
+    				color: inherit;
+    			}
+    
+    			&:hover {
+    				color: $color2 !important;
+    			}
+    		}
+    	}
+		
+		h2 {
+			margin: 110px 30px 40px 200px;
+		}
+		
+		h1 {
+			margin: 0 30px 0 200px;
+    		border-bottom: 0;
+    		line-height: 1.25;
+		}
+		
+		.date {
+			color: $color12;
+		}
+	}
+	
+	&+.news-info {
+		
+		.breadcrumbs~* {
+			letter-spacing: 0;
+		}
+		
+		.subtitle, h1 {
+			width: 30%;
+			min-width: 350px;
+		}
+		
+		.subtitle {
+			font-size: 26px;
+			font-weight: 300;
+			text-transform: none;
+			margin: 30px 30px 30px 30px;
+		}
+		
+		h1 {
+			margin: 30px 30px 30px 30px;
+    		border-bottom: 0;
+    		line-height: 1.25;
+		}
+		
+		.date {
+			margin: 110px 30px 30px 30px;
+			font-size: 18px;
+			text-transform: none;
+			color: $color12;
+		}
+	}
+	
+	&+.careers-info {
+		//color: $color4;
+		
+		.breadcrumbs li {
+			//color: $color4;
+		}
+		
+		.subtitle, h1 {
+			width: 40%;
+			min-width: 450px;
+		}
+		
+		.subtitle {
+			font-size: 26px;
+			font-weight: 300;
+			text-transform: none;
+			margin: 30px 30px 30px 30px;
+		}
+		
+		h1 {
+			margin: 30px 30px 30px 30px;
+    		border-bottom: 0;
+    		line-height: 1.25;
+		}
+		
+		h2 {
+			margin: 70px 30px 30px 30px;
+		}
+	}
+}

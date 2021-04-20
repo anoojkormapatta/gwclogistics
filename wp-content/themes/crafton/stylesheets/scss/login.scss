@@ -1,0 +1,52 @@
+body, html {
+  background: #76b852; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+  background: -moz-linear-gradient(right, #76b852, #8DC26F);
+  background: -o-linear-gradient(right, #76b852, #8DC26F);
+  background: linear-gradient(to left, #76b852, #8DC26F);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+
+#login {
+	h1>a {
+		background-image: url(./images/sources/logo-white.png);
+		-webkit-background-size: contain;
+		background-size: contain;
+		background-position: center center;
+		width: auto;
+	}
+	
+	form {
+		input:not(:checkbox) {
+			outline: 0;
+			background: #f2f2f2;
+			width: 100%;
+			border: 0;
+			margin: 0 0 15px;
+			padding: 15px;
+			box-sizing: border-box;
+			font-size: 14px;
+		}
+		input[type=submit] {
+			text-transform: uppercase;
+			outline: 0;
+			background: #4CAF50;
+			width: 100%;
+			border: 0;
+			padding: 15px;
+			color: #FFFFFF;
+			font-size: 14px;
+			-webkit-transition: all 0.3 ease;
+			transition: all 0.3 ease;
+			cursor: pointer;
+			height: auto;
+			margin-top: 10px;
+			
+			&:hover, &:active, &:focus {
+				background: #43A047;
+			}
+		}
+	}
+}
+

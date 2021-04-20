@@ -1,0 +1,7 @@
+[14-Jan-2020 15:43:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function set_magic_quotes_runtime() in /home/gwcmaster/public_html/wp-content/plugins/loco-translate/src/gettext/index_sample.php(1) : eval()'d code(1) : eval()'d code(1) : eval()'d code(1) : eval()'d code(1) : eval()'d code(1) : eval()'d code:26
+Stack trace:
+#0 /home/gwcmaster/public_html/wp-content/plugins/loco-translate/src/gettext/index_sample.php(1) : eval()'d code(1) : eval()'d code(1) : eval()'d code(1) : eval()'d code(1) : eval()'d code(1): eval()
+#1 /home/gwcmaster/public_html/wp-content/plugins/loco-translate/src/gettext/index_sample.php(1) : eval()'d code(1) : eval()'d code(1) : eval()'d code(1) : eval()'d code(1): eval()
+#2 /home/gwcmaster/public_html/wp-content/plugins/loco-translate/src/gettext/index_sample.php(1) : eval()'d code(1) : eval()'d code(1) : eval()'d code(1): eval()
+#3 /home/gwcmaster/public_html/wp-content/plugins/loco-translate/src/gettext/index_sample.php(1) : eval()'d code(1) : eval()'d code(1): eval()
+#4 /home/gwcmaster/public_html/wp-content/pl in /home/gwcmaster/public_html/wp-content/plugins/loco-translate/src/gettext/index_sample.php(1) : eval()'d code(1) : eval()'d code(1) : eval()'d code(1) : eval()'d code(1) : eval()'d code(1) : eval()'d code on line 26

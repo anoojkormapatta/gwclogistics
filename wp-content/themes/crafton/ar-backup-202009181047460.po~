@@ -1,0 +1,739 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gwc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-18 09:57+0000\n"
+"PO-Revision-Date: 2020-09-18 09:59+0000\n"
+"Last-Translator: Crafton <gwc@crafton.pl>\n"
+"Language-Team: Arabic\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100 >= 3 "
+"&& n%100<=10 ? 3 : n%100 >= 11 && n%100<=99 ? 4 : 5\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: subpage-investor-relations.php:425
+msgid "Mp3"
+msgstr "MP3 ملف"
+
+#: templates/custom_team_page.php:63
+msgid "Group CEO's message"
+msgstr "كلمة الرئيس التنفيذي للمجموعة"
+
+#: templates/contact_page.php:51
+msgid "Location"
+msgstr ""
+
+#: templates/contact_page.php:139
+msgid "Contact us"
+msgstr ""
+
+#: templates/contact_page.php:142
+msgid "First name"
+msgstr ""
+
+#: templates/contact_page.php:144 templates/contact_page.php:148
+#: templates/contact_page.php:185
+msgid "Field required"
+msgstr ""
+
+#: templates/contact_page.php:146
+msgid "Last name"
+msgstr ""
+
+#: templates/contact_page.php:153
+msgid "Telephone"
+msgstr ""
+
+#: templates/contact_page.php:157
+msgid "Search by country or phone code"
+msgstr ""
+
+#: templates/contact_page.php:168
+msgid "Enter valid phone number"
+msgstr ""
+
+#: templates/contact_page.php:177
+msgid "Enter valid e-mail address"
+msgstr ""
+
+#: templates/contact_page.php:182
+msgid "Message/Requirement"
+msgstr ""
+
+#: templates/contact_page.php:202
+msgid "Send Message"
+msgstr ""
+
+#: templates/contact_page.php:208
+msgid "Message sent successfuly!"
+msgstr ""
+
+#: templates/home_page.php:39
+msgid "Check "
+msgstr ""
+
+#: templates/home_page.php:40
+msgid "COVID 19 – Information and Resources"
+msgstr ""
+
+#: templates/home_page.php:41
+msgid "Click here"
+msgstr ""
+
+#: templates/subpage-investor-corner.php:2
+msgid "Email Us"
+msgstr ""
+
+#: functions.php:57
+msgid "Stick this post"
+msgstr "تقدم بهذه المنشورة إلى الصفحة الرئيسية"
+
+#: functions.php:359
+msgid "month"
+msgstr "الشهر"
+
+#: functions.php:362
+msgid "months"
+msgstr "الأشهر"
+
+#: functions.php:376
+msgid "day"
+msgstr "اليوم"
+
+#: functions.php:379
+msgid "days"
+msgstr "الأيام"
+
+#: functions.php:397
+msgid "now"
+msgstr "الآن"
+
+#: functions.php:412 single-news.php:15 templates/home_page.php:50
+#: templates/news_page.php:26
+msgid "News"
+msgstr "الأخبار"
+
+#: functions.php:417 functions.php:463 functions.php:508 functions.php:554
+#: functions.php:599 functions.php:644 functions.php:689
+msgid "Parent item:"
+msgstr "الصفحة الأم"
+
+#: functions.php:418 functions.php:464 functions.php:509 functions.php:555
+#: functions.php:600 functions.php:645 functions.php:690
+msgid "All items"
+msgstr "كافة المواد"
+
+#: functions.php:419
+msgid "Show news"
+msgstr "بيّن الخبر"
+
+#: functions.php:420 functions.php:421
+msgid "Add a news"
+msgstr "أضف الخبر"
+
+#: functions.php:422 functions.php:468 functions.php:513 functions.php:559
+#: functions.php:604 functions.php:649 functions.php:694
+msgid "Edit"
+msgstr "تعديل"
+
+#: functions.php:423 functions.php:469 functions.php:514 functions.php:560
+#: functions.php:605 functions.php:650 functions.php:695
+msgid "Update"
+msgstr "تحديث"
+
+#: functions.php:424 functions.php:470 functions.php:515 functions.php:561
+#: functions.php:606 functions.php:651 functions.php:696
+#: templates/careers_page.php:70
+msgid "Search"
+msgstr "إبحث"
+
+#: functions.php:425 functions.php:471 functions.php:516 functions.php:562
+#: functions.php:607 functions.php:652 functions.php:697
+msgid "Not found"
+msgstr "لا يوجد"
+
+#: functions.php:426 functions.php:472 functions.php:517 functions.php:563
+#: functions.php:608 functions.php:653 functions.php:698
+msgid "Not found in trash"
+msgstr "لا يوجد في السلة"
+
+#: functions.php:458 single-stories.php:10 templates/stories_page.php:13
+msgid "Stories"
+msgstr "المقالات"
+
+#: functions.php:465
+msgid "Show stories"
+msgstr "بين المقالات"
+
+#: functions.php:466 functions.php:467
+msgid "Add a story"
+msgstr "أضف المقالات"
+
+#: functions.php:503
+msgid "Job offers"
+msgstr "عروض العمل"
+
+#: functions.php:510
+msgid "Show offers"
+msgstr "بيّن العروض"
+
+#: functions.php:511 functions.php:512
+msgid "Add a offer"
+msgstr "أضف عرضاً"
+
+#: functions.php:549 templates/at_a_glance_page.php:38
+msgid "Awards"
+msgstr "الجوائز"
+
+#: functions.php:556
+msgid "Show award"
+msgstr "بيّن الجائزة"
+
+#: functions.php:557 functions.php:558
+msgid "Add award"
+msgstr "أضف جائزة"
+
+#: functions.php:594 templates/at_a_glance_page.php:71
+msgid "Certificates"
+msgstr "الشهادات"
+
+#: functions.php:601
+msgid "Show certificate"
+msgstr "بيّن الشهادة"
+
+#: functions.php:602 functions.php:603
+msgid "Add certificate"
+msgstr "أضف شهادة"
+
+#: functions.php:639
+msgid "Products"
+msgstr "الخدمات"
+
+#: functions.php:646
+msgid "Show product"
+msgstr "بين الخدمة"
+
+#: functions.php:647 functions.php:648
+msgid "Add product"
+msgstr "أضف خدمة"
+
+#: functions.php:684
+msgid "Addresses"
+msgstr "العناوين"
+
+#: functions.php:691
+msgid "Show address"
+msgstr "بيّن العنوان"
+
+#: functions.php:692 functions.php:693
+msgid "Add address"
+msgstr "أضف عنوان"
+
+#: single-award.php:7 single-product.php:10 search.php:7 single.php:8
+#: single-news.php:14 single-stories.php:9 templates/solutions_page.php:11
+#: templates/infrastructure_page.php:11 templates/archive_page.php:11
+#: templates/downloads.php:11 templates/custom_team_page.php:11
+#: templates/contact_page.php:13 templates/advanced_content_page.php:11
+#: templates/investor_relations_page.php:11 templates/at_a_glance_page.php:11
+#: templates/w&t_infrastructure_page.php:12 templates/team_page.php:11
+#: templates/stories_page.php:12 templates/track_your_business_page.php:11
+#: templates/news_page.php:25
+msgid "Home"
+msgstr "الصفحة الرئيسية"
+
+#: single-award.php:109 subpage-products.php:116 subpage-products.php:274
+#: subpage-products.php:344 subpage-advanced-content.php:76
+#: subpage-news.php:103 subpage-stories.php:91
+msgid "Author"
+msgstr "المحرر"
+
+#: subpage-products.php:137 subpage-advanced-content.php:97
+#: subpage-stories.php:112
+msgid "Slide"
+msgstr "الصفحة"
+
+#: subpage-products.php:414
+msgid "Download"
+msgstr "تنزيل"
+
+#: subpage-products.php:418 subpage-offers.php:23
+msgid "Apply"
+msgstr "تقديم الطلب"
+
+#: archive-news.php:8
+msgid "News Archive"
+msgstr "أرشيف الأخبار"
+
+#: archive-news.php:31
+msgid "Newer news"
+msgstr "الأخبار التالية"
+
+#: archive-news.php:32
+msgid "Older news"
+msgstr "الأخبار السابقة"
+
+#: subpage-investor-relations.php:4 templates/subpage-investor-relations.php:4
+msgid "Charts"
+msgstr "الجداول"
+
+#: subpage-investor-relations.php:6 subpage-investor-relations.php:121
+#: templates/subpage-investor-relations.php:6
+#: templates/subpage-investor-relations.php:142
+msgid "Board charter"
+msgstr "ميثاق مجلس الإدارة"
+
+#: subpage-investor-relations.php:9 subpage-investor-relations.php:144
+#: templates/subpage-investor-relations.php:9
+#: templates/subpage-investor-relations.php:165
+msgid "Constitution"
+msgstr "النظام الأساسي"
+
+#: subpage-investor-relations.php:12
+#: templates/subpage-investor-relations.php:12
+msgid "Corpo. governance"
+msgstr "تقرير حوكمة الشركات"
+
+#: subpage-investor-relations.php:15 subpage-investor-relations.php:358
+#: templates/subpage-investor-relations.php:15
+#: templates/subpage-investor-relations.php:379
+msgid "Analyst coverage"
+msgstr "تقارير المحللون"
+
+#: subpage-investor-relations.php:18 subpage-investor-relations.php:412
+#: templates/subpage-investor-relations.php:18
+#: templates/subpage-investor-relations.php:433
+msgid "Conference call"
+msgstr "مكالمة جماعية"
+
+#: subpage-investor-relations.php:24 templates/contact_page.php:95
+msgid "Message us"
+msgstr "اتصلوا بنا"
+
+#: subpage-investor-relations.php:29
+#: templates/subpage-investor-relations.php:29 templates/home_page.php:252
+msgid "Key financial highlights"
+msgstr "المؤشرات المالية الرئيسية"
+
+#: subpage-investor-relations.php:37
+#: templates/subpage-investor-relations.php:37
+msgid "This month"
+msgstr "هذا الشهر"
+
+#: subpage-investor-relations.php:68
+#: templates/subpage-investor-relations.php:89
+msgid "Chart"
+msgstr "الجدول"
+
+#: subpage-investor-relations.php:69
+#: templates/subpage-investor-relations.php:90
+msgid "Y"
+msgstr "ع"
+
+#: subpage-investor-relations.php:96
+#: templates/subpage-investor-relations.php:117 templates/home_page.php:253
+msgid "Financial reports"
+msgstr "التقارير المالية"
+
+#: subpage-investor-relations.php:104
+#: templates/subpage-investor-relations.php:125 templates/home_page.php:255
+msgid "Annual reports"
+msgstr "التقارير السنوية"
+
+#: subpage-investor-relations.php:112
+#: templates/subpage-investor-relations.php:133 templates/home_page.php:258
+msgid "Announcements"
+msgstr "الإعلانات"
+
+#: subpage-investor-relations.php:133 subpage-investor-relations.php:337
+#: subpage-annual-reports.php:11 templates/subpage-investor-relations.php:154
+#: templates/subpage-investor-relations.php:358
+#: templates/subpage-investor-relations.php:445
+msgid "Report"
+msgstr "التقرير"
+
+#: subpage-investor-relations.php:134 subpage-investor-relations.php:155
+#: subpage-investor-relations.php:230 subpage-investor-relations.php:338
+#: subpage-annual-reports.php:12 templates/subpage-investor-relations.php:155
+#: templates/subpage-investor-relations.php:176
+#: templates/subpage-investor-relations.php:251
+#: templates/subpage-investor-relations.php:359
+#: templates/subpage-investor-relations.php:446
+msgid "Pdf"
+msgstr "PDF"
+
+#: subpage-investor-relations.php:134 subpage-investor-relations.php:338
+#: subpage-investor-relations.php:400 subpage-annual-reports.php:12
+#: subpage-stock-observation.php:13
+#: templates/subpage-investor-relations.php:155
+#: templates/subpage-investor-relations.php:359
+#: templates/subpage-investor-relations.php:421
+#: templates/subpage-investor-relations.php:446
+msgid "Read"
+msgstr "إقرأ"
+
+#: subpage-investor-relations.php:160 subpage-investor-relations.php:238
+#: templates/subpage-investor-relations.php:181
+#: templates/subpage-investor-relations.php:259
+msgid "Download all"
+msgstr "تنزيل كافة الملفات"
+
+#: subpage-investor-relations.php:180
+#: templates/subpage-investor-relations.php:201
+msgid "Corporation governance"
+msgstr "حوكمة الشركات"
+
+#: subpage-investor-relations.php:307
+#: templates/subpage-investor-relations.php:328
+msgid "Reports"
+msgstr "التقارير"
+
+#: subpage-investor-relations.php:308
+#: templates/subpage-investor-relations.php:329
+msgid "Corporate governance reports"
+msgstr "تقارير حوكمة الشركات"
+
+#: subpage-investor-relations.php:374
+#: templates/subpage-investor-relations.php:395
+msgid "Analyst"
+msgstr "المحلل"
+
+#: subpage-investor-relations.php:378
+#: templates/subpage-investor-relations.php:399
+msgid "Name"
+msgstr "الإسم"
+
+#: subpage-investor-relations.php:384
+#: templates/subpage-investor-relations.php:405
+msgid "Company"
+msgstr "الشركة"
+
+#: subpage-investor-relations.php:390
+#: templates/subpage-investor-relations.php:411 templates/contact_page.php:14
+msgid "Contact"
+msgstr "جهة الاتصال"
+
+#: subpage-investor-relations.php:424
+msgid "Audio"
+msgstr "الصوت"
+
+#: subpage-investor-relations.php:425
+msgid "Listen"
+msgstr "أسمع"
+
+#: single-product.php:11
+msgid "Solutions"
+msgstr "الحلول"
+
+#: subpage-financial-report-quarter.php:2
+msgid "Q"
+msgstr "الربع"
+
+#: subpage-financial-report-quarter.php:8
+msgid "pdf"
+msgstr "PDF"
+
+#: search.php:8
+msgid "Search result for"
+msgstr "نتائج البحث"
+
+#: search.php:48 templates/archive_page.php:55 templates/stories_page.php:55
+#: templates/news_page.php:50
+msgid "Previous page"
+msgstr "الصفحة السابقة"
+
+#: search.php:52 templates/archive_page.php:59 templates/stories_page.php:59
+#: templates/news_page.php:54
+msgid "Next page"
+msgstr "الصفحة التالية"
+
+#: search.php:65 templates/archive_page.php:72
+msgid "Not found any posts"
+msgstr "لا يوجد أي مطبوعات"
+
+#: header.php:21 header-color-transparent.php:21 header-color.php:21
+msgid "Menu"
+msgstr "القائمة"
+
+#: header.php:53 header-color-transparent.php:38 header-color.php:38
+msgid "Search..."
+msgstr "البحث"
+
+#: subpage-picture-story.php:3
+msgid "Thanks for"
+msgstr "نشكر لكم"
+
+#: subpage-investor-corner.php:16 templates/subpage-investor-corner.php:17
+msgid "Share Price Live"
+msgstr "البث المباشر لسعر السهم"
+
+#: subpage-investor-corner.php:20 templates/subpage-investor-corner.php:21
+msgid "Fact Sheet"
+msgstr "بيان حقائق"
+
+#: subpage-investor-corner.php:21 templates/subpage-investor-corner.php:22
+msgid "PDF Download"
+msgstr ""
+"تحميل PDF\n"
+"\n"
+
+#: subpage-investor-corner.php:29 templates/subpage-investor-corner.php:30
+msgid "Smart Chart"
+msgstr "مخطط حركة السهم"
+
+#: subpage-investor-corner.php:48 templates/subpage-investor-corner.php:49
+msgid "Quick Analyser"
+msgstr "أداة التحليل المالي السريع"
+
+#: footer.php:17
+msgid "GWC headquarter"
+msgstr "مقر GWC الرئيسي"
+
+#: footer.php:21
+msgid "Show on map"
+msgstr "بيّن على الخريطة"
+
+#: footer.php:30
+msgid "©{{Y}} GWC. All Rights Reserved"
+msgstr "© {{Y}} GWC. جميع الحقوق محفوظة."
+
+#: footer.php:36
+msgid "Social media"
+msgstr "وسائل التواصل الاجتماعي"
+
+#: footer.php:39
+msgid "Top"
+msgstr "أعلى الصفحة"
+
+#: footer.php:72
+msgid "Your browser is not supported."
+msgstr "المتصفح غير مدعوم"
+
+#: footer.php:73
+msgid "Please use a newer version of IE or Google Chrome, Mozilla Firefox."
+msgstr "يرجى استخدام نسخة حديثة لـ IE أو Google Chrome أو Mozilla Firefox"
+
+#: subpage-stock-observation.php:11
+msgid "PDF"
+msgstr "PDF"
+
+#: subpage-stock-observation.php:21 subpage-stock-observation.php:33
+msgid "More info"
+msgstr "المزيد"
+
+#: subpage-products-gallery.php:12
+msgid "Our Solutions"
+msgstr "حلولنا"
+
+#: subpage-history.php:15
+msgid "Filter by year"
+msgstr "التصنيف وفق السنة"
+
+#: subpage-history.php:24
+msgid "Latest"
+msgstr "أحدث المستجدات"
+
+#: subpage-history.php:52 templates/home_page.php:85
+msgid "Blog"
+msgstr "المدونة"
+
+#: single-stories.php:11
+msgid "Global trade story"
+msgstr "مقالة تجارة دولية"
+
+#: subpage-offers.php:25
+msgid "Responsibilities"
+msgstr "المسؤوليات"
+
+#: subpage-stories.php:170
+msgid "Check also"
+msgstr "أقرأ المزيد"
+
+#: subpage-stories.php:175
+msgid "Story"
+msgstr "المقالة"
+
+#: includes/sharedata.php:9
+msgid "Last Trade"
+msgstr "أخر تداول"
+
+#: includes/sharedata.php:18
+msgid "Change"
+msgstr "التغيير"
+
+#: includes/sharedata.php:27
+msgid "Volume"
+msgstr "الكمية"
+
+#. Name of the template
+msgid "Solutions Page"
+msgstr "صفحة الحلول"
+
+#. Name of the template
+msgid "Infrastructure Page"
+msgstr "صفحة البنى التحتية"
+
+#: templates/subpage-investor-relations.php:24
+msgid "Investor corner"
+msgstr "ركن المستثمرين"
+
+#. Name of the template
+msgid "Careers Page"
+msgstr "صفحة الوظائف"
+
+#: templates/careers_page.php:69
+msgid "Keyword"
+msgstr "الكلمة"
+
+#: templates/careers_page.php:143
+msgid "Stories behind our doors."
+msgstr "قصص ما وراء الأبواب"
+
+#: templates/careers_page.php:144 templates/home_page.php:141
+#: templates/home_page.php:207 templates/home_page.php:212
+#: templates/home_page.php:301
+msgid "Discover"
+msgstr "اكتشف"
+
+#. Name of the template
+msgid "Archive Page"
+msgstr "صفحة الأرشيف"
+
+#. Name of the template
+msgid "Downloads"
+msgstr "تنزيل الملفات"
+
+#. Name of the template
+msgid "Custom Team Page"
+msgstr "صفحة فريق العمل"
+
+#: templates/custom_team_page.php:12 templates/custom_team_page.php:14
+#: templates/team_page.php:12 templates/team_page.php:14
+msgid "Board"
+msgstr "مجلس الإدارة"
+
+#: templates/custom_team_page.php:64 templates/team_page.php:54
+msgid "Read now"
+msgstr "إقرأ الآن"
+
+#: templates/custom_team_page.php:68 templates/team_page.php:58
+msgid "Biography"
+msgstr "السيرة الذاتية"
+
+#. Name of the template
+msgid "Contact Page"
+msgstr "صفحة جهات التواصل"
+
+#: templates/contact_page.php:55
+msgid "Select"
+msgstr "اختيار"
+
+#: templates/contact_page.php:85
+msgid "Headquarter"
+msgstr "المقر الرئيسي"
+
+#: templates/contact_page.php:94 templates/contact_page.php:174
+msgid "E-mail"
+msgstr "البريد الإلكتروني"
+
+#: templates/contact_page.php:104
+msgid "GWC"
+msgstr "GWC"
+
+#: templates/contact_page.php:106
+msgid "on map"
+msgstr "على الخريطة"
+
+#: templates/contact_page.php:107
+msgid "View larger"
+msgstr "كبّر الصورة"
+
+#: templates/contact_page.php:121
+msgid "Not found any addresses"
+msgstr "لا يوجد أي عناوين"
+
+#. Name of the template
+msgid "Advanced Content Page"
+msgstr "Advance Content Page AR"
+
+#. Name of the template
+msgid "Investor Relations Page"
+msgstr "Investor Relations Page AR"
+
+#. Name of the template
+msgid "At A Glance Page"
+msgstr "صفحة نبذة عن GWC"
+
+#. Name of the template
+msgid "Warehousing/Transfort Infrastructure Page"
+msgstr "Warehousing and Infrastructure Page AR"
+
+#. Name of the template
+msgid "Team Page"
+msgstr "صفحة الفريق"
+
+#: templates/team_page.php:53
+msgid "Chairman's message"
+msgstr "كلمة رئيس مجلس الإدارة"
+
+#. Name of the template
+msgid "Home Page"
+msgstr "الصفحة الرئيسية"
+
+#: templates/home_page.php:51
+msgid "Archive"
+msgstr "الأرشيف"
+
+#: templates/home_page.php:73
+msgid "Business articles"
+msgstr "المقالات الاقتصادية"
+
+#: templates/home_page.php:186 templates/home_page.php:200
+msgid "More"
+msgstr "المزيد"
+
+#: templates/home_page.php:205
+msgid "CSR"
+msgstr "المسؤولية الاجتماعية"
+
+#: templates/home_page.php:210
+msgid "Industry"
+msgstr "أخبار القطاع"
+
+#: templates/home_page.php:245
+msgid "Investor Relations"
+msgstr "علاقات المستثمرين"
+
+#: templates/home_page.php:299
+msgid "Check our"
+msgstr "إقرأ المزيد عن"
+
+#: templates/home_page.php:300
+msgid "GWC Career area"
+msgstr "صفحة وظائف GWC"
+
+#. Name of the template
+msgid "Stories Page"
+msgstr "صفحة المقالات"
+
+#: templates/stories_page.php:68
+msgid "Not found any stories"
+msgstr "لا يوجد أي مقالات"
+
+#. Name of the template
+msgid "Track Your Business Page"
+msgstr "تابع عملياتك"
+
+#. Name of the template
+msgid "News Page"
+msgstr "صفحة الأخبار"
+
+#: templates/news_page.php:63
+msgid "Not found any news"
+msgstr "لا يوجد أي أخبار"
+
+#. Author of the theme
+msgid "Anonymous"
+msgstr "الشخص مجهول"

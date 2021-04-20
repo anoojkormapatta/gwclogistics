@@ -1,0 +1,89 @@
+.select-x {
+	position: relative;
+	display: inline-block;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
+	* {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	button {
+		position: relative;
+		border: 1px solid #ccc;
+		padding: 16px;
+		cursor: pointer;
+		background-color: #fff;
+		width: 100%;
+		text-align: left;
+		
+		&.open {
+			border-radius: 4px 4px 0 0;
+			
+			.icon {
+				@include rotate(270);
+			}
+		}
+		
+		span {
+			color: inherit;
+		} 
+		
+		.icon {
+			font-size: 1.2em;
+			@include rotate(90);
+		}
+	}
+
+	ul {
+		width: 100%;
+		position: absolute;
+		z-index: 10;
+		visibility: hidden;
+		border: 1px solid #ccc;
+		border-radius: 0 0 4px 4px;
+		border-top: none;
+		background-color: #fff;
+		list-style-type: none;
+		padding: 0;
+		margin: -1px 0 0;
+		
+		&.open {
+			visibility: visible !important;
+		}
+
+		li {
+			padding: 16px;
+			cursor: pointer;
+			
+			&:hover, &.selected {
+				background-color: #efefef;
+			}
+		}
+	}
+}
+
+.select-x-fade {
+	transition: visibility 0.4s, opacity 0.4s;
+	opacity: 0;
+	
+	&.open {
+		opacity: 1;
+	}
+}
+
+.select-x-slide {
+	transition: visibility 0.4s cubic-bezier(0, 1, 0.5, 1), transform 0.4s cubic-bezier(0, 1, 0.5, 1);
+	transform: scaleY(0);
+	transform-origin: top;
+	
+	&.open {
+		transform: scaleY(1);
+	}
+}

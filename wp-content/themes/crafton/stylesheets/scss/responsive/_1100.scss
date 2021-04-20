@@ -1,0 +1,647 @@
+html[dir='rtl'] {
+	.investor {
+		.data {
+			.rate {
+				padding-right: 35%;
+
+				i {
+					left: 65%;
+				}
+			}
+		}
+
+		.kf-highlights {
+			&>div {
+				&:nth-child(odd) {
+					text-align: left;
+				}
+			}
+		}
+
+		.financial-reports {
+			.internal-content {
+				.q-stats {
+					padding-right: 90px;
+					padding-left: 50px;
+
+					.icon-chart {
+						right: 60px;
+					}
+
+					span {
+						left: 93px;
+					}
+
+					i {
+						left: 100px;
+					}
+				}
+			}
+
+			.attachment.attachment--pdf{
+				padding-right: 92px;
+			}
+		}
+
+		.stock-observation {
+
+			.column-amount {
+				padding-right: 30px;
+
+				span {
+					left: 30px;
+				}
+
+				i {
+					left: 28px;
+				}
+			}
+		}
+	}
+
+	.news-block {
+		padding-right: 30px !important;
+
+		&+.article-navigation {
+    		padding-right: 30px;
+    	}
+	}
+
+	.stories {
+		padding-left: 100px;
+
+		blockquote {
+			margin-left: -30px;
+		}
+	}
+
+	.team {
+		.primary-data {
+			.details {
+				right: 30%;
+				left: 0;
+			}
+		}
+
+		.big-panel {
+			&>div:first-child {
+				.details {
+					right: 0;
+					left: 30px;
+				}
+
+				.message {
+					right: 50%;
+					left: 0;
+					text-align: left;
+				}
+			}
+		}
+	}
+
+	.scroll-table {
+		&>div {
+			&>div {
+				&:first-child {
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+			}
+		}
+	}
+
+	.section-table {
+		&.table-pairs {
+			&>div {
+				&:nth-child(3n) {
+					border-left: 1px solid rgba($color17, 0.5);
+				}
+
+				&:nth-child(2n) {
+					border-left: 0;
+				}
+			}
+		}
+	}
+}
+
+nav {
+	text-align: right;
+
+	&.menu {
+		display: none;
+		@include transition();
+	}
+
+	.submenu {
+		margin: 0;
+
+		&>div.picture {
+			display: none;
+		}
+	}
+
+	&.hamburger-wrapper {
+		display: inline-block;
+	}
+}
+
+.articles {
+	@include flex-direction(column !important);
+
+	&>.column {
+		@include flex(1, 0, auto !important);
+	}
+}
+
+.picture-panels {
+	.wide {
+		@include flex(1 !important, 1 !important, 0% !important);
+	}
+
+	.empty-panel {
+		display: none;
+	}
+}
+
+.infrastructure {
+	.description {
+		padding-bottom: 30px;
+
+		&>div {
+			position: static;
+		}
+	}
+
+	.subdescription {
+		padding-left: 5px !important;
+		font-size: 16px;
+	}
+
+	&>.content:not(:last-child) {
+		margin-top: 10px;
+		@include flex-direction(column !important);
+
+		&>.column {
+			@include flex(1 !important, 0 !important, auto !important);
+		}
+
+		.stats {
+			.info-row {
+				font-size: 52px;
+			}
+		}
+	}
+
+	.content:last-child {
+		.column {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+
+	.footer-stats {
+		font-size: 20px;
+		margin-bottom: 50px;
+
+		.stat-info {
+			padding-top: 80px;
+		}
+	}
+}
+
+.full-height .caption {
+	.title {
+		font-size: 42px !important;
+	}
+}
+
+footer>.content {
+	@include flex-wrap(wrap);
+
+	&>.column {
+		&:nth-child(2) {
+			@include order(3);
+			@include flex-basis(100%);
+			text-align: center;
+		}
+
+		&:first-child {
+			@include flex(1);
+		}
+
+		&:last-child {
+			@include flex(2);
+			text-align: center;
+
+			a {
+				display: inline-block;
+				width: 50%;
+				float: left;
+			}
+		}
+
+		.column {
+			@include flex-basis(33%);
+		}
+	}
+}
+
+.investor {
+	.data {
+		.general {
+			span {
+				font-size: 90px;
+				
+				&.mini {
+					font-size: 70px;
+				}
+			}
+		}
+
+		.percentage {
+			font-size: 48px;
+
+			div {
+				margin-bottom: 20px;
+			}
+
+			span {
+				bottom: 8px;
+			}
+		}
+
+		.rate {
+			padding-left: 35%;
+
+			i {
+				right: 65%;
+				width: 80px;
+				height: 80px;
+				border-radius: 40px;
+				line-height: 80px;
+			}
+
+			.icon {
+				font-size: 26px;
+			}
+
+			span {
+				font-size: 18px;
+			}
+		}
+	}
+
+	.financial-reports {
+		.internal-content {
+			&>.content {
+				@include flex-direction(column !important);
+
+				&>.column {
+					@include flex(1 !important, 0 !important, auto !important);
+				}
+			}
+
+			.q-stats {
+				padding-left: 90px;
+				padding-right: 50px;
+
+				.icon-chart {
+					left: 60px;
+				}
+
+				span {
+					right: 93px;
+				}
+
+				i {
+					right: 100px;
+				}
+			}
+		}
+		.attachment.attachment--pdf{
+			padding-left: 93px;
+			margin-bottom: 10px;
+			display: inline-block;
+		}
+	}
+
+	.stock-observation {
+
+		.col-helper {
+			.column-amount {
+				@include flex-grow(1);
+			}
+
+			.column-evaluation {
+				@include flex-grow(1);
+			}
+
+			.column-sep {
+				display: none;
+			}
+		}
+
+		.content {
+			.column {
+				.title {
+					font-size: 48px;
+				}
+			}
+		}
+
+		.column-evaluation {
+			.subtitle {
+				font-size: 16px;
+				margin: 22px 0 19px;
+			}
+		}
+
+		.column-amount {
+			padding-left: 30px;
+
+			span {
+				right: 30px;
+			}
+
+			i {
+				right: 28px;
+			}
+		}
+	}
+
+	.kf-highlights {
+		&>div {
+			width: 50%;
+
+			&:nth-child(odd) {
+				text-align: right;
+			}
+		}
+	}
+}
+
+.investor-relations {
+	.flex-content {
+		&>div {
+			&:first-child {
+				p.lead {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.analysis-table {
+		height: 600px;
+	}
+
+	.investor .data {
+		.general span {
+			font-size: 60px;
+		}
+
+		.rate span {
+			font-size: 18px;
+		}
+	}
+}
+
+.scroll-table {
+	font-size: 16px;
+	letter-spacing: 0;
+
+	span, a[mailto] {
+		font-size: 13px;
+	}
+
+	&>div {
+		&>div {
+			height: 100px;
+			width: 250px;
+
+			&:first-child {
+				width: 150px;
+				padding-left: 10px;
+				padding-right: 10px;
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+.team {
+	.primary-data {
+		margin-top: 40px;
+		margin-bottom: 50px;
+		@include flex-direction(column !important);
+
+		&>div {
+			@include flex(1 !important, 0 !important, auto !important);
+			padding: 0;
+
+			&:not(:first-child) {
+				margin-top: 30px;
+			}
+		}
+
+		.details {
+			position: absolute;
+			left: 30%;
+			right: 0;
+		}
+	}
+
+	.secondary-data {
+		.picture-wrapper {
+			min-height: 0;
+		}
+	}
+
+	.big-panel {
+		&>div:first-child {
+			.picture-wrapper {
+				width: 100%;
+			}
+
+			.details {
+				top: auto;
+				bottom: 30px;
+				left: 0;
+				right: 30px;
+				padding: 30px 0;
+				background-color: rgba(255,255,255,1);
+				&.details--chairman{
+					position: inherit;
+					margin-bottom: 80px;
+					.message{
+						float: left;
+					}
+					.show-bio{
+						position: relative;
+						bottom: -66px;
+						left: 10px;
+					}
+				}
+			}
+
+			.message {
+				bottom: 10px;
+				left: 50%;
+				right: 0;
+				text-align: right;
+			}
+
+			.hint {
+				margin-bottom: 0;
+			}
+		}
+
+		.title {
+			color: $color22;
+		}
+	}
+
+	.picture-wrapper {
+		width: calc(30% - 30px);
+		min-height: 200px;
+	}
+}
+
+.certificates {
+	.second-cell {
+		.subtitle, .hint {
+			margin: 30px;
+		}
+
+		.subtitle+.hint {
+			margin-top: -30px;
+		}
+	}
+
+	.img-bottom {
+		height: 180px;
+	}
+}
+
+.stories {
+	padding-right: 100px;
+
+	blockquote {
+		margin-right: -30px;
+	}
+
+	.right-expand:not(.pin-left) {
+		margin-right: -100px;
+
+		figcaption, .figcaption {
+			margin-right: 100px;
+		}
+	}
+
+	.left-expand:not(.pin-right) {
+		margin-left: -100px;
+
+		figcaption, .figcaption {
+			margin-left: 100px;
+		}
+	}
+}
+
+.news-block {
+	padding-left: 30px !important;
+
+	&+.article-navigation {
+    	padding-left: 30px;
+    }
+}
+
+.history {
+	height: 0;
+}
+
+.careers-block {
+	.offers {
+    	&>div {
+    		padding: 30px 100px 30px 30px;
+    	}
+
+    	.date {
+    		right: 30px;
+    	}
+    }
+
+    .search-panel {
+    	padding: 30px 30px;
+    }
+
+	.informations {
+		padding-top: 100px;
+	}
+
+	.number-stats {
+		font-size: 100px;
+		margin-bottom: 100px;
+	}
+
+	.flex-content {
+		&>div {
+			&:first-child {
+				p.lead {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+.grid-container {
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	.content {
+		max-width: 600px;
+
+		.column {
+			@include flex-basis(100%);
+			max-width: none;
+		}
+
+		svg {
+			height: 230px;
+		}
+	}
+}
+
+.section-table {
+	&.table-pairs {
+		&>div {
+			@include flex-basis(50%);
+			max-width: 50%;
+
+			&:nth-child(3n) {
+				border-right: 1px solid rgba($color17, 0.5);
+			}
+
+			&:nth-child(2n) {
+				border-right: 0;
+			}
+
+			&:last-child {
+				border-bottom: 0;
+			}
+
+			&:nth-last-child(2):not(:nth-child(3n)) {
+				border-bottom: 1px solid rgba($color17, 0.5);
+			}
+
+			&:nth-last-child(3):nth-child(3n+1) {
+				border-bottom: 1px solid rgba($color17, 0.5);
+			}
+
+			&:nth-last-child(2):not(:nth-child(2n)) {
+				border-bottom: 0;
+			}
+		}
+	}
+}

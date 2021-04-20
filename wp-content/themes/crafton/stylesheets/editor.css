@@ -1,0 +1,9 @@
+body#tinymce.wp-editor .mce-item-table {
+	width: 100%;
+	min-height: 100px;
+	table-layout: fixed;
+}
+
+body#tinymce.wp-editor .mce-item-table td {
+	min-height: 100px;
+}

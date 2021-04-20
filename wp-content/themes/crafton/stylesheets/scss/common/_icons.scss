@@ -1,0 +1,20 @@
+.icons {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+svg[class^="icon"] {
+   	display: inline-block;
+   	width: 1em;
+   	height: 1em;
+   	fill: currentColor;
+   	@include transition();
+   
+   	.icon-arrow {
+		width: 1.3076171875em;
+	}
+}

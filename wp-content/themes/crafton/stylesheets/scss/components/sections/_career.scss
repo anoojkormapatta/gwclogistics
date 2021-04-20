@@ -1,0 +1,300 @@
+.career {
+	position: relative;
+	text-align: center;
+	height: 180px;
+	padding-top: 30px;
+	background: url(images/temporary/careers.png) no-repeat 50% 50%;
+	background-size: cover;
+	color: $color1;
+
+	.covid19 {
+		position: relative;
+		text-align: center;
+		height: 150px;
+		padding-top: 30px;
+		background: url(images/temporary/gwccovid19.png) no-repeat 50% 50%;
+		background-size: cover;
+		color: $color1;
+	}
+	
+	.subtitle {
+		font-size: 12px;
+		line-height: 48px;
+		letter-spacing: 4px;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+	
+	.description {
+		font-size: 26px;
+		letter-spacing: 2px;
+	}
+	
+	.button {
+		position: absolute;
+		top: 50%;
+		right: 30px;
+		margin-top: -23px;
+	}
+}
+
+.careers-block {
+	margin-top: -155px;
+    padding: 0 30px;
+    background: $color9;
+    
+    .offers {
+    	border-top: 1px solid $color9;
+    	background: $color1;
+    	margin: 0 -30px;
+    	
+    	&>div {
+    		position: relative;
+    		padding: 30px 300px 30px 200px;
+    		border-bottom: 1px solid $color9;
+    		
+    		&:last-child {
+    			border-bottom: 0;
+    		}
+    	}
+    	
+    	.title {
+    		color: $color4;
+    		font-size: 26px;
+    	}
+    	
+    	.subtitle {
+    		color: $color4;
+    		font-size: 18px;
+    		line-height: 1;
+    		margin-bottom: 10px;
+    		letter-spacing: 0;
+    		
+    		span {
+    			color: $color8;
+    		}
+    	}
+    	
+    	.date {
+    		position: absolute;
+    		top: 30px;
+    		right: 200px;
+    		font-size: 14px;
+    		color: $color8;
+    	}
+    	
+    	.title a {
+    		color: inherit;
+    		font-size: inherit;
+    		line-height: inherit;
+    		
+    		&:hover, &:focus {
+    			color: $color24;
+    		}
+    	}
+    }
+    
+    .search-panel {
+    	background: $color1;
+    	padding: 30px 200px;
+    	margin: 0 -30px;
+    	
+    	input[type=text] {
+    		padding: 13px 0;
+    		font-size: 12px;
+    		line-height: 20px;
+    		letter-spacing: 3px;
+    		border: 0;
+    		width: 100%;
+    		
+    		@include placeholder { 
+    			text-transform: uppercase; 
+    		};
+    	}
+    	
+    	.button {
+    		position: absolute;
+    		top: 15px;
+    		right: 15px;
+    	}
+    }
+    
+    form {    	
+    	position: relative;
+    	border: 1px solid $color8;
+    	border-radius: 4px;
+    	padding: 15px 200px 15px 15px;
+    	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.05);
+    }
+    
+    .informations {
+    	padding: 170px 30px 0 30px;
+    	margin: 0 -30px;
+    	background-image: url(./images/sources/world-map2.png);
+    	background-repeat: no-repeat;
+    	background-position: 50% 50%;
+    	background-size: 100% auto;
+    }
+    
+    .picture-panel {
+    	background: $color1;
+    	color: $color1;
+    	margin: 75px -30px 0;
+    	
+    	&>a {
+    		color: inherit;
+    		font-size: 0;
+    		
+    		&:hover, &:focus {
+    			@include opacity(0.8);
+    		}
+    		
+    		&:first-of-type, &:last-of-type:nth-of-type(4) {
+    			.item {
+    				width: 33%;
+    			}
+    		}
+    	}
+    	
+    	.item {
+    		position: relative;
+    		display: inline-block;
+    		width: 67%;
+    		height: 400px;
+    		border-bottom: 1px solid $color1;
+    		border-right: 1px solid $color1;
+    		border-collapse: collapse;
+    		background-repeat: no-repeat;
+    		background-size: cover;
+    		background-color: $color4;
+    		background-position: 50% 50%;
+    		vertical-align: top;
+    	}
+    	
+    	.caption {
+    		margin: 200px 30px 30px 30px;
+    		font-size: 12px;
+    		text-transform: uppercase;
+    		letter-spacing: 9px;
+    	}
+    	
+    	.title {
+    		margin: 30px;
+    		font-size: 26px;
+    		letter-spacing: 2px;
+    		max-height: 375px;
+    	}
+    	
+    	.subtitle {
+    		position: absolute;
+    		bottom: 30px;
+    		left: 30px;
+    		font-size: 18px;
+    		letter-spacing: 2px;
+    	}
+    	
+    	.footer {
+    		height: 88px;
+    		padding: 30px;
+    		font-size: 20px;
+    		line-height: 28px;
+    		color: $color4;
+    		
+    		.button {
+    			float: right;
+    			margin-top: -8px;
+    		}
+    	}
+    }
+    
+    .number-stats {
+    	margin-bottom: 150px;
+    }
+    
+    .sharing {
+    	margin: 30px 0;
+    }
+    
+    .flex-content {
+		@include flex-display(flex);
+		@include flex-direction(row);
+		
+		&>div {
+			@include flex(1);
+			display: inline-block;
+			padding: 0 10px;
+			
+			&:first-child {
+				padding-left: 0;
+				
+				p.lead {
+					width: 66%;
+				}
+			}
+			
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+	}
+}
+
+.offer-details {
+	position: relative;
+	max-height: 0;
+	margin-right: -100px;
+	overflow: hidden;
+	
+	@include transition();
+
+	&>div {
+		display: inline-block;
+		vertical-align: top;
+		font-size: 0;
+		
+		&:first-child {
+			width: 50%;
+			margin-right: 16%;
+		}
+		
+		&:last-child {
+			padding-top: 50px;
+			width: 33%;
+		}
+	}
+
+	.hint {
+		font-size: 12px;
+		color: $color8;
+		letter-spacing: 3px;
+		margin: 50px 0 30px;
+		text-transform: uppercase;
+	}
+	
+	.rounded {
+		display: inline-block;
+		margin: 0 0 0 20px;
+	}
+
+	.apply, .rounded {	
+		vertical-align: middle;
+	}
+		
+	.list {
+		font-size: 18px;
+		color: $color4;
+	
+		.hint {
+			color: inherit;
+			border: 0;
+			padding: 0;
+			margin-bottom: 0;
+			margin-top: 40px;
+		}
+		
+		div {
+			border-bottom: 1px solid $color9;
+			padding: 20px 0;
+		}
+	}
+}

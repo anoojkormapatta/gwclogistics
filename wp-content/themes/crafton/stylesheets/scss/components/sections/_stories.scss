@@ -1,0 +1,208 @@
+.picture-panels {
+	position: relative;
+	color: $color1;
+	background: $color1;
+	@include clearfix();
+	@include flex-display(flex);
+	@include flex-direction(row);
+	height: 815px;
+
+	.column {
+		@include flex(1);
+		display: inline-block;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		position: relative;
+
+		.footer {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 90px;
+			width: 100%;
+			background: $color1;
+			border-right: 1px solid $color9;
+
+			.category-title {
+				display: inline-block;
+				color: $color8;
+				font-size: 12px;
+				font-weight: 300;
+				text-transform: uppercase;
+				letter-spacing: 3px;
+				line-height: 20px;
+				margin: 35px 30px;
+				width: calc(100% - 265px);
+			}
+
+			.button {
+				font-weight: 300;
+				vertical-align: middle;
+			}
+		}
+
+		&:nth-last-child(2) .footer {
+			border-right: 0;
+		}
+	}
+
+	.csr {
+		background-image: url(images/temporary/stories/csr.png);
+	}
+
+	.industry {
+		background-image: url(images/temporary/stories/industry.png);
+	}
+
+	.panels {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 90px;
+		margin: auto;
+		@include clearfix();
+		@include flex-display(flex);
+		@include flex-direction(row);
+	}
+
+	.panel {
+		@include flex(1);
+		display: inline-block;
+		position: relative;
+		margin: 430px 30px 30px;
+		padding: 30px 30px 80px;
+
+		&.green {
+			background: $color3;
+		}
+
+		&.blue {
+			background: $color23;
+		}
+
+		.category {
+			font-size: 12px;
+			font-weight: 300;
+			letter-spacing: 10px;
+			text-transform: uppercase;
+		}
+
+		.title {
+			font-size: 26px;
+			letter-spacing: 0;//3px;
+			margin-top: 30px;
+		}
+
+		.button {
+			position: absolute;
+			bottom: 30px;
+			left: 30px;
+		}
+	}
+}
+
+.stories {
+	margin-top: -155px;
+    margin-left: 100px;
+    padding: 50px 200px 70px 100px;
+
+    &+.stories {
+    	margin-top: 25px;
+    	margin-bottom: 25px;
+    }
+
+    &+.article-navigation {
+    	margin-left: 100px;
+    	margin-top: 25px;
+    }
+
+    h3, .date {
+    	text-align: center;
+    }
+
+    &>.sharing {
+    	text-align: center;
+    	margin: 50px 0;
+    }
+
+    h3 {
+    	margin-top: 50px;
+    	line-height: 1.25;
+    }
+
+    section h3 {
+    	text-align: left;
+    }
+
+    .more-info {
+    	margin: 50px 0;
+    	border: 0;
+    	position: relative;
+
+    	.article-action {
+    		position: absolute;
+    		top: 10px;
+    		right: 0;
+    	}
+
+    	h3 {
+    		margin-top: 0;
+    		line-height: 60px;
+    	}
+
+    	a {
+    		&:hover, &:focus {
+    			color: $color22;
+
+    			.item {
+    				background: $color16;
+    			}
+
+    			.picture {
+    				top: 15px;
+    				bottom: 15px;
+    				left: -15px;
+    				width: 130px;
+    				height: 130px;
+    			}
+    		}
+    	}
+
+    	.item {
+    		position: relative;
+    		padding: 30px 30px 30px 130px;
+    		border-top: 1px solid $color16;
+    		min-height: 160px;
+    		font-size: 18px;
+
+    		@include transition();
+    	}
+
+    	.picture {
+    		position: absolute;
+    		top: 30px;
+    		left: 0;
+    		bottom: 30px;
+    		height: 100px;
+    		width: 100px;
+    		background-repeat: no-repeat;
+    		background-size: cover;
+    		background-color: $color9;
+
+    		@include transition();
+    	}
+
+    	.category {
+    		font-size: 12px;
+    		letter-spacing: 2px;
+    		text-transform: uppercase;
+    		margin: 20px 0 10px;
+    	}
+    }
+
+		blockquote.pin-left{
+			margin-left: 0;
+		}
+}

@@ -1,0 +1,7 @@
+.narrow {
+	@include flex(1 !important, 1 !important, 0% !important);
+}
+
+.wide {
+	@include flex(2 !important, 1 !important, 0% !important);
+}

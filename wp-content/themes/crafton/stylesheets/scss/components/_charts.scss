@@ -1,0 +1,193 @@
+.chart-wrapper {
+	position: relative;
+	display: inline-block;
+	width: 250px;
+	height: 155px;
+	background: $color4;
+	overflow: hidden;
+	margin-top: 25px;
+	
+	.pieContainer {
+		margin-top: -445px;
+		margin-left: -175px;
+	}
+	
+	.icon-kfh-shape {
+		color: $color1;
+		position: absolute;
+		left: 0;
+		bottom: 25px;
+		z-index: 10;
+		font-size: 1.3em;
+	}
+	
+	.title {
+		font-size: 12px;
+		line-height: 14px;
+		letter-spacing: 3px;
+		color: $color8;
+		position: absolute;
+		top: 0;
+		left: 0;
+		text-align: center;
+		height: auto;
+		width: 100%;
+		padding: 0;
+		border: 0;
+	}
+} 
+
+.pieContainer {
+	height: 600px;
+	margin-left: 30px;
+	position: relative;
+	
+	.pieBackground {
+		position: absolute;
+		width: 600px;
+		height: 600px;
+		border-radius: 300px;
+		//box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+	} 
+	
+	.pieBackground2 {
+		position: absolute;
+		top: 7px;
+		left: 7px;
+		width: 586px;
+		height: 586px;
+		border-radius: 293px;
+		//box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+	} 
+	
+	.pieBackground3 {
+		position: absolute;
+		top: 12px;
+		left: 12px;
+		width: 576px;
+		height: 576px;
+		border-radius: 288px;
+		//box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+	}
+	
+	.pieBackground4 {
+		position: absolute;
+		top: 19px;
+		left: 19px;
+		width: 562px;
+		height: 562px;
+		border-radius: 281px;
+		//box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+	}
+	
+	.pie {
+		//transition: all 1s;
+		position: absolute;
+		width: 600px;
+		height: 600px;
+		border-radius: 300px;
+		clip: rect(0px, 300px, 600px, 0px);
+	}
+	
+	.hold {
+		position: absolute;
+		width: 600px;
+		height: 600px;
+		border-radius: 300px;
+		clip: rect(0px, 600px, 600px, 300px);
+	}
+	
+	.pieSlice1 {
+		@include rotate(160);
+		
+		.pie {
+			background-color: $color17;
+			@include rotate(40);
+		}
+	}
+	
+	.pieSlice2 {
+		@include rotate(161.5);
+		
+		.pie {
+			background-color: $color4;
+			@include rotate(37);
+			top: 7px;
+			left: 7px;
+			width: 586px;
+			height: 586px;
+			border-radius: 293px;
+			clip: rect(0px, 293px, 586px, 0px);
+		}
+	}
+	
+	.pieSlice3 {
+		@include rotate(17.5);
+		
+		.pie {
+			background-color: $color3;
+			//@include rotate(-35); //-35deg = 100% | on arabic 35deg = 100%
+			top: 12px;
+			left: 12px;
+			width: 576px;
+			height: 576px;
+			border-radius: 288px;
+			clip: rect(0px, 288px, 576px, 0px);
+			@include transition(1.5s, linear, all, 0.5s);
+		}
+	}
+	
+	.pieSlice4 {
+		@include rotate(161.5);
+		
+		.pie {
+			background-color: $color4;
+			@include rotate(37);
+			top: 19px;
+			left: 19px;
+			width: 562px;
+			height: 562px;
+			border-radius: 281px;
+			clip: rect(0px, 281px, 562px, 0px);
+		}
+	}
+	
+	.innerCircle {
+		position: absolute;
+		width: 552px;
+		height: 552px;
+		background-color: $color4;
+		border-radius: 276px;
+		top: 24px;
+		left: 24px; 
+		//box-shadow: 0px 0px 8px rgba(0,0,0,0.5) inset;
+		color: $color1;
+		
+		.label {
+			position: absolute;
+			display: block;
+			width: 100%;
+			bottom: 10px;
+			left: 0;
+			text-align: center;
+			font-size: 60px;
+			font-weight: 300;
+			letter-spacing: -2px;
+		}
+		
+		span {
+			font-size: 18px;
+			position: absolute;
+			display: block;
+			width: 100%;
+			bottom: 73px;
+			left: 0;
+			text-align: center;
+			text-transform: none;
+		}
+		
+		small {
+			font-size: 14px;
+		}
+	}
+}

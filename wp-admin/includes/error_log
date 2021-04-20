@@ -1,0 +1,1 @@
+[17-Jan-2019 21:13:21 UTC] PHP Fatal error:  Class 'WP_Filesystem_Base' not found in /home/gwcmaster/public_html/wp-admin/includes/class-wp-filesystem-ssh2.php on line 36

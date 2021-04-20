@@ -1,0 +1,147 @@
+footer {
+	.privacy-policy {
+		margin: 0 15px;
+	}
+
+	.annotations-content {
+		@include flex-display(flex);
+		@include flex-direction(row);
+		font-weight: 300;
+		
+		.column {
+			@include flex(1, 0, 60%);
+			
+			&+.column {
+				@include flex(1, 0, 40%);
+				text-align: right;
+			}
+		}
+		
+		.icon-arrow-up {
+			display: inline;
+			margin-left: 20px;
+		}
+		
+		a {
+			display: inline-block;
+			font-size: inherit;
+			text-transform: uppercase;
+		}
+	}
+	
+	
+	.annotations {
+		line-height: 1.25;
+		font-weight: 300;
+		letter-spacing: 1px;
+	
+		&+.annotations {
+			margin-top: 40px;
+		}
+		
+		a {
+			text-transform: none;
+			text-decoration: underline;
+		}
+	}
+	
+	.social {
+		display: inline-block;
+		line-height: 48px;
+		letter-spacing: 3px;
+		padding-left: 10px;
+		margin-right: 30px;
+		
+		.icon {
+			color: $color1;
+			vertical-align: middle;
+		}
+		
+		.icon-share {
+			font-size: 24px;
+			margin-right: 10px;
+		}
+	}
+	
+	.jsSocial-it {
+		&:hover, &:focus {
+			color: $color4;
+		
+			svg {
+				color: $color4;
+			}
+		}
+	}
+	
+	.jsGo-top {
+		color: $color1;
+		
+		&:hover, &:focus {
+			color: $color4;
+		}
+	}
+}
+
+.social-items {
+	margin: 0 5px;
+
+	.inline {
+		display: inline-block;
+	}
+}
+
+.social-wrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+	
+.social-platform {
+	position: relative;
+	background: $color1;
+	padding: 3px;
+	border-radius: 3px;
+	border: 1px solid $color1;
+	
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: -10px;
+		right: 35px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 10px 10px 0 10px;
+		border-color: $color1 transparent transparent transparent;
+	}
+	
+	a {
+		min-width: 80px;
+		line-height: 26px;
+		padding: 0 10px;
+		margin: 5px;
+		text-transform: none;
+		text-align: left;
+		letter-spacing: 0;
+		border-radius: 2px;
+		font-weight: 500;
+		
+		&.white {
+			color: $color2;
+			
+			&:hover {
+				.icon {
+					fill: $color1;
+				}
+			}
+		}
+		
+		.icon {
+			position: static;
+			vertical-align: middle;
+			font-size: 20px;
+			margin: 0px 10px 3px -4px;
+			fill: $color2;
+		}
+	}
+}

@@ -1,0 +1,128 @@
+.articles {
+	background: $color1;
+	@include clearfix();
+	@include flex-display(flex);
+	@include flex-direction(row);
+	overflow: hidden;
+	
+	.column {
+		@include flex(1, 1, 50%);
+		display: inline-block;
+		
+		h2 {
+			display: inline-block;
+		}
+		
+		.title {
+			height: 88px;
+			box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.05);
+			@include gradient(rgba(234,234,234,0.05), rgba(253,253,253,0.05), vertical);
+			border-top: 1px solid $color12;
+			border-bottom: 1px solid $color12;
+			padding: 30px;			
+			font-size: 20px;
+			line-height: 28px;
+			color: $color4;
+			
+			.button {
+				float: right;
+				margin-top: -8px;
+			}
+		}
+		
+		.items {
+			margin: 30px;
+			
+			a:hover, a:focus {
+				.picture-item, .text-item {
+					@include opacity(0.75);
+				}
+			}
+		}
+		
+		.text-item, .picture-item {
+			padding-top: 30px;
+			padding-bottom: 30px;
+			font-size: 26px;
+			line-height: 28px;
+			
+			@include transition();
+		
+			span {
+				display: inline-block;
+				vertical-align: middle;
+			}
+			
+			.date, .category {
+				font-size: 18px;
+				color: $color8;
+			}
+		}
+		
+		.text-item {
+			
+			.date {
+				width: 80px;
+			}
+			
+			.subject {
+				width: calc(100% - 80px);
+			}
+			
+		}
+		
+		.picture-item {
+			position: relative;
+			min-height: 200px;
+			padding-left: 230px;
+			padding-right: 30px;
+			
+			&.no-photo {
+				padding-left: 30px;
+				
+				.photo {
+					display: none;
+				}
+			}
+			
+			.photo {
+				display: block;
+				position: absolute;
+				width: 200px;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				margin: auto;
+				background-size: cover;
+				background-repeat: no-repeat;
+				z-index: 2;
+			}
+			
+			&:first-child:after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 20px;
+				background-color: $color9;
+				height: 1px;
+				z-index: 1;
+			}
+		
+			.subject {
+				display: inline-block;
+				margin-top: 15px;
+				line-height: 1.25;
+			}
+		
+			span {
+				width: 100%;
+			}
+		}
+		
+		.bussiness .items {
+			//margin: 0; //uncomment when picture-item enabled
+		}
+	}
+	
+}

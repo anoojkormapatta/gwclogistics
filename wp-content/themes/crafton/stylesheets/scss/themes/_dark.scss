@@ -1,0 +1,22 @@
+body.dark {
+	background: $color4;
+	color: $color1;
+	
+	.head-info {
+		background: none;
+		
+		h1 {
+			border-bottom-color: transparent;
+		}
+	
+		.breadcrumbs li {
+			&.active {
+    			color: inherit;
+    		}
+    	
+    		&:hover {
+    			color: $color2 !important;
+    		}
+    	}
+	}
+}

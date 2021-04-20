@@ -1,0 +1,233 @@
+.certificates {
+	position: relative;
+	margin: 40px 0 0;
+	border-top: 0;
+	
+	h3.hint {
+		margin: 40px 0;
+	}
+	
+	.huge-label {
+		font-size: 320px;
+		vertical-align: middle;
+		padding: 20px 0 !important;
+		text-align: center;
+	}
+	
+	.subtitle, .hint {
+		letter-spacing: 2px;
+		color: $color4;
+		margin: 50px;
+	}
+	
+	.subtitle {
+		font-size: 26px;
+		line-height: 1.5;
+		
+		&+.hint {
+			margin-top: -50px;
+		}
+	}
+	
+	.hint {
+		font-size: 12px;
+		text-transform: uppercase;
+		line-height: 2;
+	}
+	
+	.primary-label {
+		margin: 50px 0;
+		text-align: center;
+	}
+	
+	p {
+		position: absolute;
+		bottom: 50px;
+		left: 50px;
+		right: 50px;
+		line-height: 1.25;
+	}
+	
+	.img-right {
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: calc(50% - 75px);
+		
+		img {
+			border: 1px solid $color9;
+			margin-top: -10px;
+			margin-left: -10px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			width: 100%;
+			height: auto;
+		}
+	}
+	
+	.img-bottom {
+		display: inline-block;
+		position: static;
+		height: 235px;
+		
+		img {
+			border: 1px solid $color9;
+			margin-top: -10px;
+			margin-left: -10px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			height: 100%;
+			width: auto;
+		}
+	}
+	
+	.img-bg {
+		background: $color9;
+		margin: 50px;
+	}
+	
+	.content {
+		@include flex-display(flex);
+		@include flex-direction(row);
+		border-top: 1px solid $color21;
+		margin: 0;
+		
+		&>div {
+			@include flex(1, 0, 25%);
+			display: inline-block;
+			padding: 0;
+			border-right: 1px solid $color21;
+			
+			&:last-child {
+				@include flex(1, 0, 75%);
+				border-right: 0;
+			}
+		}
+	}
+	
+	.second-cell {
+		@include flex-display(flex);
+		@include flex-direction(column);
+		height: 100%;
+		text-align: left;
+		
+		&>div {
+			height: 320px;
+			@include flex(1);
+			display: inline-block;
+			padding: 0;
+			
+			
+			&:first-child>.content {
+				border-top: 0;
+				
+				&>div {
+					@include flex(1, 0, 67%);
+					padding-bottom: 100px;
+					position: relative;
+			
+					&:first-child {
+						.subtitle, .hint {
+							width: calc(50% - 75px);
+						}
+					}
+			
+					&:last-child {
+						@include flex(1, 0, 33%);
+					}
+				}
+			}
+			
+			&:last-child>.content {
+				&>div:last-child {
+					.subtitle, .hint {
+						width: calc(100% - 325px);
+					}
+				}
+			}
+		}
+
+		.content {
+			height: 100%;
+		
+			&>div {
+				@include flex(1, 0, 33%);
+				padding: 0;
+				position: relative;
+			
+				&:last-child {
+					@include flex(1, 0, 67%);
+					border-right: 0;
+				}
+			}
+		}
+	}
+	
+	.details {
+		position: absolute;
+		top: 50px;
+		right: 0;
+		width: 250px;
+		padding-left: 40px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		margin: -10px 0 0;
+	
+		.title {
+			height: 90px;
+			line-height: 90px;
+			font-size: 60px;
+			font-weight: 300;
+			padding-right: 48px !important;
+			position: relative;
+			vertical-align: middle;
+			letter-spacing: 0;
+			
+			span {
+				font-size: 0.5em;
+				top: 0;
+				left: -32px;
+				right: auto;
+			}
+		}
+	
+		span {
+			position: absolute;
+			right: 2px;
+			top: 45px;
+			margin: auto;
+			font-size: 12px;
+		}
+		
+		i {
+			position: absolute;
+			top: 20px;
+			right: 0;
+			display: inline-block;
+			width: 22px;
+			height: 22px;
+			background: $color1; 
+			border-radius: 11px;
+			text-align: center;
+			z-index: 1;
+			line-height: 22px;
+			font-size: 0;
+			color: $color1;
+			
+			svg {
+				font-size: 8px;
+				display: none;
+				vertical-align: middle;
+			}
+			
+			&.up {
+				background: $color3;
+				
+				svg {
+					display: inline;
+				}
+			}
+		}
+	}
+}
